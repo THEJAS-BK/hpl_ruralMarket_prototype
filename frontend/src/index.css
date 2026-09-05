@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+@theme {
+  /* Clean Minimalism Color System based on Slate & Indigo */
+  --color-primary: #4f46e5;                 /* Indigo 600 */
+  --color-primary-container: #4338ca;       /* Indigo 700 */
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #e0e7ff;     /* Indigo 100 */
+  --color-primary-fixed: #eef2ff;           /* Indigo 50 */
+  --color-primary-fixed-dim: #c7d2fe;       /* Indigo 200 */
+  --color-on-primary-fixed: #312e81;        /* Indigo 900 */
+  --color-on-primary-fixed-variant: #4338ca;/* Indigo 700 */
+
+  --color-secondary: #059669;               /* Emerald 600 */
+  --color-secondary-container: #10b981;     /* Emerald 500 */
+  --color-on-secondary: #ffffff;
+  --color-on-secondary-container: #064e3b;  /* Emerald 900 */
+  --color-secondary-fixed: #ecfdf5;         /* Emerald 50 */
+  --color-secondary-fixed-dim: #a7f3d0;     /* Emerald 200 */
+
+  --color-tertiary: #d97706;                /* Amber 600 */
+  --color-tertiary-container: #4f46e5;      /* Indigo 600 */
+  --color-tertiary-fixed: #ffffff;
+  --color-tertiary-fixed-dim: #e0e7ff;      /* Indigo 100 */
+  --color-on-tertiary: #ffffff;
+  --color-on-tertiary-container: #ffffff;
+  --color-on-tertiary-fixed: #0f172a;       /* Slate 900 */
+  --color-on-tertiary-fixed-variant: #059669; /* Emerald 600 */
+
+  /* Neutral Canvas & Surfaces: Clean Slate & Pure White */
+  --color-surface: #f8fafc;                 /* Slate 50 (#F8FAFC) */
+  --color-surface-bright: #ffffff;
+  --color-surface-dim: #f1f5f9;             /* Slate 100 */
+  --color-surface-container-lowest: #ffffff;/* Pure White */
+  --color-surface-container-low: #f8fafc;   /* Slate 50 */
+  --color-surface-container: #f1f5f9;       /* Slate 100 */
+  --color-surface-container-high: #e2e8f0;  /* Slate 200 */
+  --color-surface-container-highest: #cbd5e1;/* Slate 300 */
+  --color-surface-variant: #f1f5f9;         /* Slate 100 */
+
+  --color-on-surface: #0f172a;              /* Slate 900 (#0F172A) */
+  --color-on-surface-variant: #64748b;      /* Slate 500 (#64748B) */
+  --color-outline: #94a3b8;                 /* Slate 400 */
+  --color-outline-variant: #e2e8f0;         /* Slate 200 (#E2E8F0) */
+  --color-inverse-surface: #0f172a;         /* Slate 900 */
+  --color-inverse-on-surface: #f8fafc;      /* Slate 50 */
+
+  --color-error: #ef4444;                   /* Red 500 */
+  --color-error-container: #fee2e2;         /* Red 100 */
+  --color-on-error: #ffffff;
+  --color-on-error-container: #991b1b;      /* Red 800 */
+
+  /* Spacing */
+  --spacing-space-2xs: 0.25rem;
+  --spacing-space-xs: 0.5rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-space-md: 1rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-xl: 1.5rem;
+  --spacing-space-2xl: 2rem;
+  --spacing-space-3xl: 3rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-margin-tablet: 1.5rem;
+  --spacing-margin-mobile: 1rem;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+  }
+}
+
+/* Custom Clean Typography Utility Classes */
+.font-display-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+.text-display-lg {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.font-headline-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.text-headline-lg {
+  font-size: 26px;
+  line-height: 32px;
+}
+
+.font-headline-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.text-headline-md {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.font-headline-sm {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.text-headline-sm {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.font-stat-xl {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.text-stat-xl {
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.font-stat-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.text-stat-md {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.font-label-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.text-label-lg {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.font-label-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+.text-label-md {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.font-label-sm {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+.text-label-sm {
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.font-body-lg {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-body-lg {
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.font-body-md {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-body-md {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.font-body-sm {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.text-body-sm {
+  font-size: 12px;
+  line-height: 16px;
+}

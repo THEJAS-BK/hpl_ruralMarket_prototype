@@ -1,0 +1,193 @@
+{
+  "reportTitle": "Marketwise Price & Arrival Report",
+  "reportDate": "2026-09-03",
+  "commodities": [
+    {
+      "commodityGroup": "Cereals",
+      "commodity": "Barley(Jau)",
+      "msp": 2150,
+      "priceOn03Sep2026": 2401.13,
+      "priceOn02Sep2026": 2304.02,
+      "priceOn01Sep2026": 2394.11,
+      "arrivalOn03Sep2026": 235.52,
+      "arrivalOn02Sep2026": 144.72,
+      "arrivalOn01Sep2026": 177.41
+    },
+    {
+      "commodityGroup": "Cereals",
+      "commodity": "Maize",
+      "msp": 2400,
+      "priceOn03Sep2026": 2131.24,
+      "priceOn02Sep2026": 2123.48,
+      "priceOn01Sep2026": 2126.22,
+      "arrivalOn03Sep2026": 19350.09,
+      "arrivalOn02Sep2026": 16758.22,
+      "arrivalOn01Sep2026": 19413.37
+    },
+    {
+      "commodityGroup": "Cereals",
+      "commodity": "Paddy(Common)",
+      "msp": 2369,
+      "priceOn03Sep2026": 2803.69,
+      "priceOn02Sep2026": 2755.48,
+      "priceOn01Sep2026": 2672.42,
+      "arrivalOn03Sep2026": 8719.86,
+      "arrivalOn02Sep2026": 7630.1,
+      "arrivalOn01Sep2026": 9530.18
+    },
+    {
+      "commodityGroup": "Cereals",
+      "commodity": "Ragi(Finger Millet)",
+      "msp": 4886,
+      "priceOn03Sep2026": 3705.63,
+      "priceOn02Sep2026": 3491.01,
+      "priceOn01Sep2026": 5023.08,
+      "arrivalOn03Sep2026": 63.2,
+      "arrivalOn02Sep2026": 366.1,
+      "arrivalOn01Sep2026": 44.2
+    },
+    {
+      "commodityGroup": "Cereals",
+      "commodity": "Wheat",
+      "msp": 2585,
+      "priceOn03Sep2026": 2628.66,
+      "priceOn02Sep2026": 2635.15,
+      "priceOn01Sep2026": 2640.91,
+      "arrivalOn03Sep2026": 40497.4,
+      "arrivalOn02Sep2026": 44093.62,
+      "arrivalOn01Sep2026": 46244.82
+    },
+    {
+      "commodityGroup": "Oil Seeds",
+      "commodity": "Groundnut",
+      "msp": 7263,
+      "priceOn03Sep2026": 7224.35,
+      "priceOn02Sep2026": 7183.49,
+      "priceOn01Sep2026": 6949.53,
+      "arrivalOn03Sep2026": 737.51,
+      "arrivalOn02Sep2026": 911.02,
+      "arrivalOn01Sep2026": 594.4
+    },
+    {
+      "commodityGroup": "Oil Seeds",
+      "commodity": "Mustard",
+      "msp": 6200,
+      "priceOn03Sep2026": 7438.76,
+      "priceOn02Sep2026": 7495.97,
+      "priceOn01Sep2026": 7379,
+      "arrivalOn03Sep2026": 2233.24,
+      "arrivalOn02Sep2026": 2954.38,
+      "arrivalOn01Sep2026": 2558.71
+    },
+    {
+      "commodityGroup": "Oil Seeds",
+      "commodity": "Niger Seed(Ramtil)",
+      "msp": 9537,
+      "priceOn03Sep2026": null,
+      "priceOn02Sep2026": 11800,
+      "priceOn01Sep2026": null,
+      "arrivalOn03Sep2026": null,
+      "arrivalOn02Sep2026": 0.72,
+      "arrivalOn01Sep2026": null
+    },
+    {
+      "commodityGroup": "Oil Seeds",
+      "commodity": "Safflower",
+      "msp": 6540,
+      "priceOn03Sep2026": 4792.93,
+      "priceOn02Sep2026": 5286.11,
+      "priceOn01Sep2026": 5613.16,
+      "arrivalOn03Sep2026": 28.3,
+      "arrivalOn02Sep2026": 24.9,
+      "arrivalOn01Sep2026": 45.3
+    },
+    {
+      "commodityGroup": "Oil Seeds",
+      "commodity": "Soyabean",
+      "msp": 5328,
+      "priceOn03Sep2026": 5590.59,
+      "priceOn02Sep2026": 5770.93,
+      "priceOn01Sep2026": 5869.16,
+      "arrivalOn03Sep2026": 4097.33,
+      "arrivalOn02Sep2026": 4867.28,
+      "arrivalOn01Sep2026": 5805.82
+    },
+    {
+      "commodityGroup": "Pulses",
+      "commodity": "Bengal Gram(Gram)(Whole)",
+      "msp": 5875,
+      "priceOn03Sep2026": 6269.86,
+      "priceOn02Sep2026": 6113.1,
+      "priceOn01Sep2026": 6147.02,
+      "arrivalOn03Sep2026": 2091.73,
+      "arrivalOn02Sep2026": 1978.65,
+      "arrivalOn01Sep2026": 2345.28
+    },
+    {
+      "commodityGroup": "Pulses",
+      "commodity": "Green Gram(Moong)(Whole)",
+      "msp": 8768,
+      "priceOn03Sep2026": 7751.1,
+      "priceOn02Sep2026": 7655.27,
+      "priceOn01Sep2026": 7808.74,
+      "arrivalOn03Sep2026": 6382.22,
+      "arrivalOn02Sep2026": 7977.13,
+      "arrivalOn01Sep2026": 4625.18
+    },
+    {
+      "commodityGroup": "Pulses",
+      "commodity": "Lentil(Masur)(Whole)",
+      "msp": 7000,
+      "priceOn03Sep2026": 8573.15,
+      "priceOn02Sep2026": 7129.43,
+      "priceOn01Sep2026": 8052.87,
+      "arrivalOn03Sep2026": 534.35,
+      "arrivalOn02Sep2026": 909.54,
+      "arrivalOn01Sep2026": 585.3
+    },
+    {
+      "commodityGroup": "Pulses",
+      "commodity": "Red gram/Arhar/Tur(whole)",
+      "msp": 8000,
+      "priceOn03Sep2026": 8134.15,
+      "priceOn02Sep2026": 8061.06,
+      "priceOn01Sep2026": 8117.52,
+      "arrivalOn03Sep2026": 2068.02,
+      "arrivalOn02Sep2026": 2362.27,
+      "arrivalOn01Sep2026": 1847.42
+    },
+    {
+      "commodityGroup": "Vegetables",
+      "commodity": "Onion",
+      "msp": null,
+      "priceOn03Sep2026": 3426.37,
+      "priceOn02Sep2026": 3460.03,
+      "priceOn01Sep2026": 3327.78,
+      "arrivalOn03Sep2026": 19139.04,
+      "arrivalOn02Sep2026": 16321.19,
+      "arrivalOn01Sep2026": 13078.81
+    },
+    {
+      "commodityGroup": "Vegetables",
+      "commodity": "Potato",
+      "msp": null,
+      "priceOn03Sep2026": 628.82,
+      "priceOn02Sep2026": 654.85,
+      "priceOn01Sep2026": 653.55,
+      "arrivalOn03Sep2026": 39712.83,
+      "arrivalOn02Sep2026": 34212.42,
+      "arrivalOn01Sep2026": 33139.33
+    },
+    {
+      "commodityGroup": "Vegetables",
+      "commodity": "Tomato",
+      "msp": null,
+      "priceOn03Sep2026": 2092.92,
+      "priceOn02Sep2026": 2071.28,
+      "priceOn01Sep2026": 1937.1,
+      "arrivalOn03Sep2026": 6741.68,
+      "arrivalOn02Sep2026": 7208.53,
+      "arrivalOn01Sep2026": 7194.49
+    }
+  ]
+}

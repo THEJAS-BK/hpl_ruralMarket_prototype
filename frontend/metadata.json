@@ -1,0 +1,6 @@
+{
+  "name": "KisanPulse",
+  "description": "Agri-commodity spot intelligence engine providing real-time APMC Mandi price discovery, geospatial arbitrage, and economic net-realization calculators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
