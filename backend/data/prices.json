@@ -1,0 +1,3842 @@
+[
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-05",
+    "minPrice": 5527,
+    "maxPrice": 5987,
+    "modalPrice": 5757
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-06",
+    "minPrice": 5516,
+    "maxPrice": 5976,
+    "modalPrice": 5746
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-07",
+    "minPrice": 5486,
+    "maxPrice": 5944,
+    "modalPrice": 5715
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-08",
+    "minPrice": 5486,
+    "maxPrice": 5944,
+    "modalPrice": 5715
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-09",
+    "minPrice": 5465,
+    "maxPrice": 5921,
+    "modalPrice": 5693
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-10",
+    "minPrice": 5443,
+    "maxPrice": 5897,
+    "modalPrice": 5670
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-11",
+    "minPrice": 5454,
+    "maxPrice": 5908,
+    "modalPrice": 5681
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-12",
+    "minPrice": 5458,
+    "maxPrice": 5912,
+    "modalPrice": 5685
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-13",
+    "minPrice": 5451,
+    "maxPrice": 5905,
+    "modalPrice": 5678
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-14",
+    "minPrice": 5463,
+    "maxPrice": 5919,
+    "modalPrice": 5691
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-15",
+    "minPrice": 5460,
+    "maxPrice": 5916,
+    "modalPrice": 5688
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-16",
+    "minPrice": 5442,
+    "maxPrice": 5896,
+    "modalPrice": 5669
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-17",
+    "minPrice": 5436,
+    "maxPrice": 5890,
+    "modalPrice": 5663
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-18",
+    "minPrice": 5448,
+    "maxPrice": 5902,
+    "modalPrice": 5675
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-19",
+    "minPrice": 5446,
+    "maxPrice": 5900,
+    "modalPrice": 5673
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-20",
+    "minPrice": 5460,
+    "maxPrice": 5914,
+    "modalPrice": 5687
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-21",
+    "minPrice": 5429,
+    "maxPrice": 5881,
+    "modalPrice": 5655
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-22",
+    "minPrice": 5402,
+    "maxPrice": 5852,
+    "modalPrice": 5627
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-23",
+    "minPrice": 5376,
+    "maxPrice": 5824,
+    "modalPrice": 5600
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-24",
+    "minPrice": 5358,
+    "maxPrice": 5804,
+    "modalPrice": 5581
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-25",
+    "minPrice": 5388,
+    "maxPrice": 5836,
+    "modalPrice": 5612
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-26",
+    "minPrice": 5366,
+    "maxPrice": 5814,
+    "modalPrice": 5590
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-27",
+    "minPrice": 5361,
+    "maxPrice": 5807,
+    "modalPrice": 5584
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-28",
+    "minPrice": 5366,
+    "maxPrice": 5814,
+    "modalPrice": 5590
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-29",
+    "minPrice": 5353,
+    "maxPrice": 5799,
+    "modalPrice": 5576
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-30",
+    "minPrice": 5341,
+    "maxPrice": 5787,
+    "modalPrice": 5564
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-08-31",
+    "minPrice": 5331,
+    "maxPrice": 5775,
+    "modalPrice": 5553
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-09-01",
+    "minPrice": 5770,
+    "maxPrice": 6250,
+    "modalPrice": 6010
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-09-02",
+    "minPrice": 5673,
+    "maxPrice": 6145,
+    "modalPrice": 5909
+  },
+  {
+    "mandiId": "indore",
+    "crop": "soybean",
+    "date": "2026-09-03",
+    "minPrice": 5495,
+    "maxPrice": 5953,
+    "modalPrice": 5724
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-05",
+    "minPrice": 2505,
+    "maxPrice": 2713,
+    "modalPrice": 2609
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-06",
+    "minPrice": 2502,
+    "maxPrice": 2710,
+    "modalPrice": 2606
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-07",
+    "minPrice": 2498,
+    "maxPrice": 2706,
+    "modalPrice": 2602
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-08",
+    "minPrice": 2509,
+    "maxPrice": 2719,
+    "modalPrice": 2614
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-09",
+    "minPrice": 2517,
+    "maxPrice": 2727,
+    "modalPrice": 2622
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-10",
+    "minPrice": 2509,
+    "maxPrice": 2719,
+    "modalPrice": 2614
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-11",
+    "minPrice": 2508,
+    "maxPrice": 2718,
+    "modalPrice": 2613
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-12",
+    "minPrice": 2518,
+    "maxPrice": 2728,
+    "modalPrice": 2623
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-13",
+    "minPrice": 2532,
+    "maxPrice": 2742,
+    "modalPrice": 2637
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-14",
+    "minPrice": 2546,
+    "maxPrice": 2758,
+    "modalPrice": 2652
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-15",
+    "minPrice": 2542,
+    "maxPrice": 2754,
+    "modalPrice": 2648
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-16",
+    "minPrice": 2534,
+    "maxPrice": 2746,
+    "modalPrice": 2640
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-17",
+    "minPrice": 2524,
+    "maxPrice": 2734,
+    "modalPrice": 2629
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-18",
+    "minPrice": 2532,
+    "maxPrice": 2742,
+    "modalPrice": 2637
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-19",
+    "minPrice": 2542,
+    "maxPrice": 2754,
+    "modalPrice": 2648
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-20",
+    "minPrice": 2534,
+    "maxPrice": 2746,
+    "modalPrice": 2640
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-21",
+    "minPrice": 2544,
+    "maxPrice": 2756,
+    "modalPrice": 2650
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-22",
+    "minPrice": 2553,
+    "maxPrice": 2765,
+    "modalPrice": 2659
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-23",
+    "minPrice": 2562,
+    "maxPrice": 2776,
+    "modalPrice": 2669
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-24",
+    "minPrice": 2552,
+    "maxPrice": 2764,
+    "modalPrice": 2658
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-25",
+    "minPrice": 2556,
+    "maxPrice": 2768,
+    "modalPrice": 2662
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-26",
+    "minPrice": 2547,
+    "maxPrice": 2759,
+    "modalPrice": 2653
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-27",
+    "minPrice": 2533,
+    "maxPrice": 2745,
+    "modalPrice": 2639
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-28",
+    "minPrice": 2529,
+    "maxPrice": 2739,
+    "modalPrice": 2634
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-29",
+    "minPrice": 2528,
+    "maxPrice": 2738,
+    "modalPrice": 2633
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-30",
+    "minPrice": 2538,
+    "maxPrice": 2750,
+    "modalPrice": 2644
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-08-31",
+    "minPrice": 2549,
+    "maxPrice": 2761,
+    "modalPrice": 2655
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-09-01",
+    "minPrice": 2503,
+    "maxPrice": 2711,
+    "modalPrice": 2607
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-09-02",
+    "minPrice": 2497,
+    "maxPrice": 2705,
+    "modalPrice": 2601
+  },
+  {
+    "mandiId": "indore",
+    "crop": "wheat",
+    "date": "2026-09-03",
+    "minPrice": 2491,
+    "maxPrice": 2699,
+    "modalPrice": 2595
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-05",
+    "minPrice": 6977,
+    "maxPrice": 7559,
+    "modalPrice": 7268
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-06",
+    "minPrice": 6993,
+    "maxPrice": 7575,
+    "modalPrice": 7284
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-07",
+    "minPrice": 6955,
+    "maxPrice": 7535,
+    "modalPrice": 7245
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-08",
+    "minPrice": 6977,
+    "maxPrice": 7559,
+    "modalPrice": 7268
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-09",
+    "minPrice": 7015,
+    "maxPrice": 7599,
+    "modalPrice": 7307
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-10",
+    "minPrice": 7005,
+    "maxPrice": 7589,
+    "modalPrice": 7297
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-11",
+    "minPrice": 6973,
+    "maxPrice": 7555,
+    "modalPrice": 7264
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-12",
+    "minPrice": 6935,
+    "maxPrice": 7513,
+    "modalPrice": 7224
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-13",
+    "minPrice": 6963,
+    "maxPrice": 7543,
+    "modalPrice": 7253
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-14",
+    "minPrice": 6978,
+    "maxPrice": 7560,
+    "modalPrice": 7269
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-15",
+    "minPrice": 6970,
+    "maxPrice": 7550,
+    "modalPrice": 7260
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-16",
+    "minPrice": 6961,
+    "maxPrice": 7541,
+    "modalPrice": 7251
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-17",
+    "minPrice": 6996,
+    "maxPrice": 7578,
+    "modalPrice": 7287
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-18",
+    "minPrice": 7029,
+    "maxPrice": 7615,
+    "modalPrice": 7322
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-19",
+    "minPrice": 7044,
+    "maxPrice": 7630,
+    "modalPrice": 7337
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-20",
+    "minPrice": 7046,
+    "maxPrice": 7634,
+    "modalPrice": 7340
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-21",
+    "minPrice": 7051,
+    "maxPrice": 7639,
+    "modalPrice": 7345
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-22",
+    "minPrice": 7060,
+    "maxPrice": 7648,
+    "modalPrice": 7354
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-23",
+    "minPrice": 7090,
+    "maxPrice": 7680,
+    "modalPrice": 7385
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-24",
+    "minPrice": 7069,
+    "maxPrice": 7659,
+    "modalPrice": 7364
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-25",
+    "minPrice": 7066,
+    "maxPrice": 7654,
+    "modalPrice": 7360
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-26",
+    "minPrice": 7050,
+    "maxPrice": 7638,
+    "modalPrice": 7344
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-27",
+    "minPrice": 7017,
+    "maxPrice": 7601,
+    "modalPrice": 7309
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-28",
+    "minPrice": 7055,
+    "maxPrice": 7643,
+    "modalPrice": 7349
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-29",
+    "minPrice": 7060,
+    "maxPrice": 7648,
+    "modalPrice": 7354
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-30",
+    "minPrice": 7083,
+    "maxPrice": 7673,
+    "modalPrice": 7378
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-08-31",
+    "minPrice": 7078,
+    "maxPrice": 7668,
+    "modalPrice": 7373
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-09-01",
+    "minPrice": 6945,
+    "maxPrice": 7523,
+    "modalPrice": 7234
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-09-02",
+    "minPrice": 7055,
+    "maxPrice": 7643,
+    "modalPrice": 7349
+  },
+  {
+    "mandiId": "indore",
+    "crop": "mustard",
+    "date": "2026-09-03",
+    "minPrice": 7001,
+    "maxPrice": 7585,
+    "modalPrice": 7293
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-05",
+    "minPrice": 6190,
+    "maxPrice": 6706,
+    "modalPrice": 6448
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-06",
+    "minPrice": 6155,
+    "maxPrice": 6667,
+    "modalPrice": 6411
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-07",
+    "minPrice": 6170,
+    "maxPrice": 6684,
+    "modalPrice": 6427
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-08",
+    "minPrice": 6169,
+    "maxPrice": 6683,
+    "modalPrice": 6426
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-09",
+    "minPrice": 6167,
+    "maxPrice": 6681,
+    "modalPrice": 6424
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-10",
+    "minPrice": 6187,
+    "maxPrice": 6703,
+    "modalPrice": 6445
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-11",
+    "minPrice": 6196,
+    "maxPrice": 6712,
+    "modalPrice": 6454
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-12",
+    "minPrice": 6213,
+    "maxPrice": 6731,
+    "modalPrice": 6472
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-13",
+    "minPrice": 6191,
+    "maxPrice": 6707,
+    "modalPrice": 6449
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-14",
+    "minPrice": 6220,
+    "maxPrice": 6738,
+    "modalPrice": 6479
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-15",
+    "minPrice": 6192,
+    "maxPrice": 6708,
+    "modalPrice": 6450
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-16",
+    "minPrice": 6190,
+    "maxPrice": 6706,
+    "modalPrice": 6448
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-17",
+    "minPrice": 6212,
+    "maxPrice": 6730,
+    "modalPrice": 6471
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-18",
+    "minPrice": 6218,
+    "maxPrice": 6736,
+    "modalPrice": 6477
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-19",
+    "minPrice": 6192,
+    "maxPrice": 6708,
+    "modalPrice": 6450
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-20",
+    "minPrice": 6217,
+    "maxPrice": 6735,
+    "modalPrice": 6476
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-21",
+    "minPrice": 6251,
+    "maxPrice": 6771,
+    "modalPrice": 6511
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-22",
+    "minPrice": 6240,
+    "maxPrice": 6760,
+    "modalPrice": 6500
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-23",
+    "minPrice": 6211,
+    "maxPrice": 6729,
+    "modalPrice": 6470
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-24",
+    "minPrice": 6182,
+    "maxPrice": 6698,
+    "modalPrice": 6440
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-25",
+    "minPrice": 6181,
+    "maxPrice": 6697,
+    "modalPrice": 6439
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-26",
+    "minPrice": 6147,
+    "maxPrice": 6659,
+    "modalPrice": 6403
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-27",
+    "minPrice": 6110,
+    "maxPrice": 6620,
+    "modalPrice": 6365
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-28",
+    "minPrice": 6089,
+    "maxPrice": 6597,
+    "modalPrice": 6343
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-29",
+    "minPrice": 6061,
+    "maxPrice": 6567,
+    "modalPrice": 6314
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-30",
+    "minPrice": 6081,
+    "maxPrice": 6587,
+    "modalPrice": 6334
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-08-31",
+    "minPrice": 6106,
+    "maxPrice": 6614,
+    "modalPrice": 6360
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-09-01",
+    "minPrice": 6048,
+    "maxPrice": 6552,
+    "modalPrice": 6300
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-09-02",
+    "minPrice": 6014,
+    "maxPrice": 6516,
+    "modalPrice": 6265
+  },
+  {
+    "mandiId": "indore",
+    "crop": "chana",
+    "date": "2026-09-03",
+    "minPrice": 6169,
+    "maxPrice": 6683,
+    "modalPrice": 6426
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-05",
+    "minPrice": 5227,
+    "maxPrice": 5663,
+    "modalPrice": 5445
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-06",
+    "minPrice": 5250,
+    "maxPrice": 5688,
+    "modalPrice": 5469
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-07",
+    "minPrice": 5232,
+    "maxPrice": 5668,
+    "modalPrice": 5450
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-08",
+    "minPrice": 5215,
+    "maxPrice": 5649,
+    "modalPrice": 5432
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-09",
+    "minPrice": 5235,
+    "maxPrice": 5671,
+    "modalPrice": 5453
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-10",
+    "minPrice": 5255,
+    "maxPrice": 5693,
+    "modalPrice": 5474
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-11",
+    "minPrice": 5283,
+    "maxPrice": 5723,
+    "modalPrice": 5503
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-12",
+    "minPrice": 5268,
+    "maxPrice": 5708,
+    "modalPrice": 5488
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-13",
+    "minPrice": 5282,
+    "maxPrice": 5722,
+    "modalPrice": 5502
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-14",
+    "minPrice": 5311,
+    "maxPrice": 5753,
+    "modalPrice": 5532
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-15",
+    "minPrice": 5328,
+    "maxPrice": 5772,
+    "modalPrice": 5550
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-16",
+    "minPrice": 5340,
+    "maxPrice": 5786,
+    "modalPrice": 5563
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-17",
+    "minPrice": 5315,
+    "maxPrice": 5757,
+    "modalPrice": 5536
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-18",
+    "minPrice": 5340,
+    "maxPrice": 5786,
+    "modalPrice": 5563
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-19",
+    "minPrice": 5323,
+    "maxPrice": 5767,
+    "modalPrice": 5545
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-20",
+    "minPrice": 5352,
+    "maxPrice": 5798,
+    "modalPrice": 5575
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-21",
+    "minPrice": 5365,
+    "maxPrice": 5813,
+    "modalPrice": 5589
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-22",
+    "minPrice": 5341,
+    "maxPrice": 5787,
+    "modalPrice": 5564
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-23",
+    "minPrice": 5365,
+    "maxPrice": 5813,
+    "modalPrice": 5589
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-24",
+    "minPrice": 5347,
+    "maxPrice": 5793,
+    "modalPrice": 5570
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-25",
+    "minPrice": 5341,
+    "maxPrice": 5787,
+    "modalPrice": 5564
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-26",
+    "minPrice": 5316,
+    "maxPrice": 5760,
+    "modalPrice": 5538
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-27",
+    "minPrice": 5295,
+    "maxPrice": 5737,
+    "modalPrice": 5516
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-28",
+    "minPrice": 5279,
+    "maxPrice": 5719,
+    "modalPrice": 5499
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-29",
+    "minPrice": 5310,
+    "maxPrice": 5752,
+    "modalPrice": 5531
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-30",
+    "minPrice": 5290,
+    "maxPrice": 5730,
+    "modalPrice": 5510
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-08-31",
+    "minPrice": 5288,
+    "maxPrice": 5728,
+    "modalPrice": 5508
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-09-01",
+    "minPrice": 5469,
+    "maxPrice": 5925,
+    "modalPrice": 5697
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-09-02",
+    "minPrice": 5377,
+    "maxPrice": 5825,
+    "modalPrice": 5601
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "soybean",
+    "date": "2026-09-03",
+    "minPrice": 5209,
+    "maxPrice": 5643,
+    "modalPrice": 5426
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-05",
+    "minPrice": 2592,
+    "maxPrice": 2808,
+    "modalPrice": 2700
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-06",
+    "minPrice": 2594,
+    "maxPrice": 2810,
+    "modalPrice": 2702
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-07",
+    "minPrice": 2579,
+    "maxPrice": 2793,
+    "modalPrice": 2686
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-08",
+    "minPrice": 2571,
+    "maxPrice": 2785,
+    "modalPrice": 2678
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-09",
+    "minPrice": 2577,
+    "maxPrice": 2791,
+    "modalPrice": 2684
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-10",
+    "minPrice": 2575,
+    "maxPrice": 2789,
+    "modalPrice": 2682
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-11",
+    "minPrice": 2586,
+    "maxPrice": 2802,
+    "modalPrice": 2694
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-12",
+    "minPrice": 2591,
+    "maxPrice": 2807,
+    "modalPrice": 2699
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-13",
+    "minPrice": 2583,
+    "maxPrice": 2799,
+    "modalPrice": 2691
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-14",
+    "minPrice": 2580,
+    "maxPrice": 2796,
+    "modalPrice": 2688
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-15",
+    "minPrice": 2590,
+    "maxPrice": 2806,
+    "modalPrice": 2698
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-16",
+    "minPrice": 2587,
+    "maxPrice": 2803,
+    "modalPrice": 2695
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-17",
+    "minPrice": 2591,
+    "maxPrice": 2807,
+    "modalPrice": 2699
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-18",
+    "minPrice": 2592,
+    "maxPrice": 2808,
+    "modalPrice": 2700
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-19",
+    "minPrice": 2578,
+    "maxPrice": 2792,
+    "modalPrice": 2685
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-20",
+    "minPrice": 2593,
+    "maxPrice": 2809,
+    "modalPrice": 2701
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-21",
+    "minPrice": 2591,
+    "maxPrice": 2807,
+    "modalPrice": 2699
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-22",
+    "minPrice": 2577,
+    "maxPrice": 2791,
+    "modalPrice": 2684
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-23",
+    "minPrice": 2577,
+    "maxPrice": 2791,
+    "modalPrice": 2684
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-24",
+    "minPrice": 2582,
+    "maxPrice": 2798,
+    "modalPrice": 2690
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-25",
+    "minPrice": 2588,
+    "maxPrice": 2804,
+    "modalPrice": 2696
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-26",
+    "minPrice": 2573,
+    "maxPrice": 2787,
+    "modalPrice": 2680
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-27",
+    "minPrice": 2586,
+    "maxPrice": 2802,
+    "modalPrice": 2694
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-28",
+    "minPrice": 2595,
+    "maxPrice": 2811,
+    "modalPrice": 2703
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-29",
+    "minPrice": 2609,
+    "maxPrice": 2827,
+    "modalPrice": 2718
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-30",
+    "minPrice": 2621,
+    "maxPrice": 2839,
+    "modalPrice": 2730
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-08-31",
+    "minPrice": 2627,
+    "maxPrice": 2845,
+    "modalPrice": 2736
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-09-01",
+    "minPrice": 2615,
+    "maxPrice": 2833,
+    "modalPrice": 2724
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-09-02",
+    "minPrice": 2609,
+    "maxPrice": 2827,
+    "modalPrice": 2718
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "wheat",
+    "date": "2026-09-03",
+    "minPrice": 2604,
+    "maxPrice": 2820,
+    "modalPrice": 2712
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-05",
+    "minPrice": 6839,
+    "maxPrice": 7409,
+    "modalPrice": 7124
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-06",
+    "minPrice": 6837,
+    "maxPrice": 7407,
+    "modalPrice": 7122
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-07",
+    "minPrice": 6807,
+    "maxPrice": 7375,
+    "modalPrice": 7091
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-08",
+    "minPrice": 6798,
+    "maxPrice": 7364,
+    "modalPrice": 7081
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-09",
+    "minPrice": 6784,
+    "maxPrice": 7350,
+    "modalPrice": 7067
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-10",
+    "minPrice": 6764,
+    "maxPrice": 7328,
+    "modalPrice": 7046
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-11",
+    "minPrice": 6729,
+    "maxPrice": 7289,
+    "modalPrice": 7009
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-12",
+    "minPrice": 6765,
+    "maxPrice": 7329,
+    "modalPrice": 7047
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-13",
+    "minPrice": 6780,
+    "maxPrice": 7346,
+    "modalPrice": 7063
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-14",
+    "minPrice": 6747,
+    "maxPrice": 7309,
+    "modalPrice": 7028
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-15",
+    "minPrice": 6739,
+    "maxPrice": 7301,
+    "modalPrice": 7020
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-16",
+    "minPrice": 6772,
+    "maxPrice": 7336,
+    "modalPrice": 7054
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-17",
+    "minPrice": 6806,
+    "maxPrice": 7374,
+    "modalPrice": 7090
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-18",
+    "minPrice": 6802,
+    "maxPrice": 7368,
+    "modalPrice": 7085
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-19",
+    "minPrice": 6836,
+    "maxPrice": 7406,
+    "modalPrice": 7121
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-20",
+    "minPrice": 6807,
+    "maxPrice": 7375,
+    "modalPrice": 7091
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-21",
+    "minPrice": 6832,
+    "maxPrice": 7402,
+    "modalPrice": 7117
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-22",
+    "minPrice": 6801,
+    "maxPrice": 7367,
+    "modalPrice": 7084
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-23",
+    "minPrice": 6829,
+    "maxPrice": 7399,
+    "modalPrice": 7114
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-24",
+    "minPrice": 6811,
+    "maxPrice": 7379,
+    "modalPrice": 7095
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-25",
+    "minPrice": 6795,
+    "maxPrice": 7361,
+    "modalPrice": 7078
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-26",
+    "minPrice": 6825,
+    "maxPrice": 7393,
+    "modalPrice": 7109
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-27",
+    "minPrice": 6804,
+    "maxPrice": 7372,
+    "modalPrice": 7088
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-28",
+    "minPrice": 6795,
+    "maxPrice": 7361,
+    "modalPrice": 7078
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-29",
+    "minPrice": 6806,
+    "maxPrice": 7374,
+    "modalPrice": 7090
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-30",
+    "minPrice": 6836,
+    "maxPrice": 7406,
+    "modalPrice": 7121
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-08-31",
+    "minPrice": 6831,
+    "maxPrice": 7401,
+    "modalPrice": 7116
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-09-01",
+    "minPrice": 6788,
+    "maxPrice": 7354,
+    "modalPrice": 7071
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-09-02",
+    "minPrice": 6896,
+    "maxPrice": 7470,
+    "modalPrice": 7183
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "mustard",
+    "date": "2026-09-03",
+    "minPrice": 6843,
+    "maxPrice": 7413,
+    "modalPrice": 7128
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-05",
+    "minPrice": 5822,
+    "maxPrice": 6308,
+    "modalPrice": 6065
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-06",
+    "minPrice": 5853,
+    "maxPrice": 6341,
+    "modalPrice": 6097
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-07",
+    "minPrice": 5838,
+    "maxPrice": 6324,
+    "modalPrice": 6081
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-08",
+    "minPrice": 5815,
+    "maxPrice": 6299,
+    "modalPrice": 6057
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-09",
+    "minPrice": 5811,
+    "maxPrice": 6295,
+    "modalPrice": 6053
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-10",
+    "minPrice": 5836,
+    "maxPrice": 6322,
+    "modalPrice": 6079
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-11",
+    "minPrice": 5813,
+    "maxPrice": 6297,
+    "modalPrice": 6055
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-12",
+    "minPrice": 5790,
+    "maxPrice": 6272,
+    "modalPrice": 6031
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-13",
+    "minPrice": 5758,
+    "maxPrice": 6238,
+    "modalPrice": 5998
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-14",
+    "minPrice": 5726,
+    "maxPrice": 6204,
+    "modalPrice": 5965
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-15",
+    "minPrice": 5703,
+    "maxPrice": 6179,
+    "modalPrice": 5941
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-16",
+    "minPrice": 5712,
+    "maxPrice": 6188,
+    "modalPrice": 5950
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-17",
+    "minPrice": 5683,
+    "maxPrice": 6157,
+    "modalPrice": 5920
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-18",
+    "minPrice": 5651,
+    "maxPrice": 6121,
+    "modalPrice": 5886
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-19",
+    "minPrice": 5617,
+    "maxPrice": 6085,
+    "modalPrice": 5851
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-20",
+    "minPrice": 5628,
+    "maxPrice": 6098,
+    "modalPrice": 5863
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-21",
+    "minPrice": 5615,
+    "maxPrice": 6083,
+    "modalPrice": 5849
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-22",
+    "minPrice": 5628,
+    "maxPrice": 6098,
+    "modalPrice": 5863
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-23",
+    "minPrice": 5615,
+    "maxPrice": 6083,
+    "modalPrice": 5849
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-24",
+    "minPrice": 5633,
+    "maxPrice": 6103,
+    "modalPrice": 5868
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-25",
+    "minPrice": 5631,
+    "maxPrice": 6101,
+    "modalPrice": 5866
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-26",
+    "minPrice": 5623,
+    "maxPrice": 6091,
+    "modalPrice": 5857
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-27",
+    "minPrice": 5627,
+    "maxPrice": 6095,
+    "modalPrice": 5861
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-28",
+    "minPrice": 5615,
+    "maxPrice": 6083,
+    "modalPrice": 5849
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-29",
+    "minPrice": 5615,
+    "maxPrice": 6083,
+    "modalPrice": 5849
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-30",
+    "minPrice": 5615,
+    "maxPrice": 6083,
+    "modalPrice": 5849
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-08-31",
+    "minPrice": 5639,
+    "maxPrice": 6109,
+    "modalPrice": 5874
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-09-01",
+    "minPrice": 5676,
+    "maxPrice": 6148,
+    "modalPrice": 5912
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-09-02",
+    "minPrice": 5644,
+    "maxPrice": 6114,
+    "modalPrice": 5879
+  },
+  {
+    "mandiId": "ujjain",
+    "crop": "chana",
+    "date": "2026-09-03",
+    "minPrice": 5789,
+    "maxPrice": 6271,
+    "modalPrice": 6030
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-05",
+    "minPrice": 5639,
+    "maxPrice": 6109,
+    "modalPrice": 5874
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-06",
+    "minPrice": 5624,
+    "maxPrice": 6092,
+    "modalPrice": 5858
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-07",
+    "minPrice": 5651,
+    "maxPrice": 6121,
+    "modalPrice": 5886
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-08",
+    "minPrice": 5657,
+    "maxPrice": 6129,
+    "modalPrice": 5893
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-09",
+    "minPrice": 5675,
+    "maxPrice": 6147,
+    "modalPrice": 5911
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-10",
+    "minPrice": 5669,
+    "maxPrice": 6141,
+    "modalPrice": 5905
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-11",
+    "minPrice": 5702,
+    "maxPrice": 6178,
+    "modalPrice": 5940
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-12",
+    "minPrice": 5730,
+    "maxPrice": 6208,
+    "modalPrice": 5969
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-13",
+    "minPrice": 5764,
+    "maxPrice": 6244,
+    "modalPrice": 6004
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-14",
+    "minPrice": 5748,
+    "maxPrice": 6228,
+    "modalPrice": 5988
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-15",
+    "minPrice": 5741,
+    "maxPrice": 6219,
+    "modalPrice": 5980
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-16",
+    "minPrice": 5716,
+    "maxPrice": 6192,
+    "modalPrice": 5954
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-17",
+    "minPrice": 5692,
+    "maxPrice": 6166,
+    "modalPrice": 5929
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-18",
+    "minPrice": 5690,
+    "maxPrice": 6164,
+    "modalPrice": 5927
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-19",
+    "minPrice": 5689,
+    "maxPrice": 6163,
+    "modalPrice": 5926
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-20",
+    "minPrice": 5713,
+    "maxPrice": 6189,
+    "modalPrice": 5951
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-21",
+    "minPrice": 5712,
+    "maxPrice": 6188,
+    "modalPrice": 5950
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-22",
+    "minPrice": 5711,
+    "maxPrice": 6187,
+    "modalPrice": 5949
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-23",
+    "minPrice": 5711,
+    "maxPrice": 6187,
+    "modalPrice": 5949
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-24",
+    "minPrice": 5739,
+    "maxPrice": 6217,
+    "modalPrice": 5978
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-25",
+    "minPrice": 5750,
+    "maxPrice": 6230,
+    "modalPrice": 5990
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-26",
+    "minPrice": 5745,
+    "maxPrice": 6223,
+    "modalPrice": 5984
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-27",
+    "minPrice": 5773,
+    "maxPrice": 6255,
+    "modalPrice": 6014
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-28",
+    "minPrice": 5778,
+    "maxPrice": 6260,
+    "modalPrice": 6019
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-29",
+    "minPrice": 5783,
+    "maxPrice": 6265,
+    "modalPrice": 6024
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-30",
+    "minPrice": 5802,
+    "maxPrice": 6286,
+    "modalPrice": 6044
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-08-31",
+    "minPrice": 5782,
+    "maxPrice": 6264,
+    "modalPrice": 6023
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-09-01",
+    "minPrice": 5920,
+    "maxPrice": 6414,
+    "modalPrice": 6167
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-09-02",
+    "minPrice": 5821,
+    "maxPrice": 6307,
+    "modalPrice": 6064
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "soybean",
+    "date": "2026-09-03",
+    "minPrice": 5639,
+    "maxPrice": 6109,
+    "modalPrice": 5874
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-05",
+    "minPrice": 2474,
+    "maxPrice": 2680,
+    "modalPrice": 2577
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-06",
+    "minPrice": 2468,
+    "maxPrice": 2674,
+    "modalPrice": 2571
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-07",
+    "minPrice": 2478,
+    "maxPrice": 2684,
+    "modalPrice": 2581
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-08",
+    "minPrice": 2471,
+    "maxPrice": 2677,
+    "modalPrice": 2574
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-09",
+    "minPrice": 2484,
+    "maxPrice": 2692,
+    "modalPrice": 2588
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-10",
+    "minPrice": 2488,
+    "maxPrice": 2696,
+    "modalPrice": 2592
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-11",
+    "minPrice": 2474,
+    "maxPrice": 2680,
+    "modalPrice": 2577
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-12",
+    "minPrice": 2464,
+    "maxPrice": 2670,
+    "modalPrice": 2567
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-13",
+    "minPrice": 2463,
+    "maxPrice": 2669,
+    "modalPrice": 2566
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-14",
+    "minPrice": 2449,
+    "maxPrice": 2653,
+    "modalPrice": 2551
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-15",
+    "minPrice": 2441,
+    "maxPrice": 2645,
+    "modalPrice": 2543
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-16",
+    "minPrice": 2447,
+    "maxPrice": 2651,
+    "modalPrice": 2549
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-17",
+    "minPrice": 2448,
+    "maxPrice": 2652,
+    "modalPrice": 2550
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-18",
+    "minPrice": 2453,
+    "maxPrice": 2657,
+    "modalPrice": 2555
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-19",
+    "minPrice": 2466,
+    "maxPrice": 2672,
+    "modalPrice": 2569
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-20",
+    "minPrice": 2465,
+    "maxPrice": 2671,
+    "modalPrice": 2568
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-21",
+    "minPrice": 2467,
+    "maxPrice": 2673,
+    "modalPrice": 2570
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-22",
+    "minPrice": 2466,
+    "maxPrice": 2672,
+    "modalPrice": 2569
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-23",
+    "minPrice": 2468,
+    "maxPrice": 2674,
+    "modalPrice": 2571
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-24",
+    "minPrice": 2481,
+    "maxPrice": 2687,
+    "modalPrice": 2584
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-25",
+    "minPrice": 2480,
+    "maxPrice": 2686,
+    "modalPrice": 2583
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-26",
+    "minPrice": 2486,
+    "maxPrice": 2694,
+    "modalPrice": 2590
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-27",
+    "minPrice": 2490,
+    "maxPrice": 2698,
+    "modalPrice": 2594
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-28",
+    "minPrice": 2502,
+    "maxPrice": 2710,
+    "modalPrice": 2606
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-29",
+    "minPrice": 2511,
+    "maxPrice": 2721,
+    "modalPrice": 2616
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-30",
+    "minPrice": 2505,
+    "maxPrice": 2713,
+    "modalPrice": 2609
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-08-31",
+    "minPrice": 2494,
+    "maxPrice": 2702,
+    "modalPrice": 2598
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-09-01",
+    "minPrice": 2494,
+    "maxPrice": 2702,
+    "modalPrice": 2598
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-09-02",
+    "minPrice": 2489,
+    "maxPrice": 2697,
+    "modalPrice": 2593
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "wheat",
+    "date": "2026-09-03",
+    "minPrice": 2483,
+    "maxPrice": 2689,
+    "modalPrice": 2586
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-05",
+    "minPrice": 7324,
+    "maxPrice": 7934,
+    "modalPrice": 7629
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-06",
+    "minPrice": 7284,
+    "maxPrice": 7890,
+    "modalPrice": 7587
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-07",
+    "minPrice": 7239,
+    "maxPrice": 7843,
+    "modalPrice": 7541
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-08",
+    "minPrice": 7269,
+    "maxPrice": 7875,
+    "modalPrice": 7572
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-09",
+    "minPrice": 7294,
+    "maxPrice": 7902,
+    "modalPrice": 7598
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-10",
+    "minPrice": 7265,
+    "maxPrice": 7871,
+    "modalPrice": 7568
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-11",
+    "minPrice": 7278,
+    "maxPrice": 7884,
+    "modalPrice": 7581
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-12",
+    "minPrice": 7299,
+    "maxPrice": 7907,
+    "modalPrice": 7603
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-13",
+    "minPrice": 7270,
+    "maxPrice": 7876,
+    "modalPrice": 7573
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-14",
+    "minPrice": 7267,
+    "maxPrice": 7873,
+    "modalPrice": 7570
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-15",
+    "minPrice": 7248,
+    "maxPrice": 7852,
+    "modalPrice": 7550
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-16",
+    "minPrice": 7262,
+    "maxPrice": 7868,
+    "modalPrice": 7565
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-17",
+    "minPrice": 7224,
+    "maxPrice": 7826,
+    "modalPrice": 7525
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-18",
+    "minPrice": 7232,
+    "maxPrice": 7834,
+    "modalPrice": 7533
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-19",
+    "minPrice": 7191,
+    "maxPrice": 7791,
+    "modalPrice": 7491
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-20",
+    "minPrice": 7152,
+    "maxPrice": 7748,
+    "modalPrice": 7450
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-21",
+    "minPrice": 7144,
+    "maxPrice": 7740,
+    "modalPrice": 7442
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-22",
+    "minPrice": 7152,
+    "maxPrice": 7748,
+    "modalPrice": 7450
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-23",
+    "minPrice": 7144,
+    "maxPrice": 7740,
+    "modalPrice": 7442
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-24",
+    "minPrice": 7188,
+    "maxPrice": 7786,
+    "modalPrice": 7487
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-25",
+    "minPrice": 7153,
+    "maxPrice": 7749,
+    "modalPrice": 7451
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-26",
+    "minPrice": 7162,
+    "maxPrice": 7758,
+    "modalPrice": 7460
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-27",
+    "minPrice": 7191,
+    "maxPrice": 7791,
+    "modalPrice": 7491
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-28",
+    "minPrice": 7193,
+    "maxPrice": 7793,
+    "modalPrice": 7493
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-29",
+    "minPrice": 7188,
+    "maxPrice": 7788,
+    "modalPrice": 7488
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-30",
+    "minPrice": 7205,
+    "maxPrice": 7805,
+    "modalPrice": 7505
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-08-31",
+    "minPrice": 7237,
+    "maxPrice": 7841,
+    "modalPrice": 7539
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-09-01",
+    "minPrice": 7306,
+    "maxPrice": 7914,
+    "modalPrice": 7610
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-09-02",
+    "minPrice": 7422,
+    "maxPrice": 8040,
+    "modalPrice": 7731
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "mustard",
+    "date": "2026-09-03",
+    "minPrice": 7365,
+    "maxPrice": 7979,
+    "modalPrice": 7672
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-05",
+    "minPrice": 5755,
+    "maxPrice": 6235,
+    "modalPrice": 5995
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-06",
+    "minPrice": 5788,
+    "maxPrice": 6270,
+    "modalPrice": 6029
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-07",
+    "minPrice": 5819,
+    "maxPrice": 6303,
+    "modalPrice": 6061
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-08",
+    "minPrice": 5808,
+    "maxPrice": 6292,
+    "modalPrice": 6050
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-09",
+    "minPrice": 5776,
+    "maxPrice": 6258,
+    "modalPrice": 6017
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-10",
+    "minPrice": 5751,
+    "maxPrice": 6231,
+    "modalPrice": 5991
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-11",
+    "minPrice": 5769,
+    "maxPrice": 6249,
+    "modalPrice": 6009
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-12",
+    "minPrice": 5777,
+    "maxPrice": 6259,
+    "modalPrice": 6018
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-13",
+    "minPrice": 5758,
+    "maxPrice": 6238,
+    "modalPrice": 5998
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-14",
+    "minPrice": 5736,
+    "maxPrice": 6214,
+    "modalPrice": 5975
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-15",
+    "minPrice": 5702,
+    "maxPrice": 6178,
+    "modalPrice": 5940
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-16",
+    "minPrice": 5684,
+    "maxPrice": 6158,
+    "modalPrice": 5921
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-17",
+    "minPrice": 5661,
+    "maxPrice": 6133,
+    "modalPrice": 5897
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-18",
+    "minPrice": 5689,
+    "maxPrice": 6163,
+    "modalPrice": 5926
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-19",
+    "minPrice": 5695,
+    "maxPrice": 6169,
+    "modalPrice": 5932
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-20",
+    "minPrice": 5719,
+    "maxPrice": 6195,
+    "modalPrice": 5957
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-21",
+    "minPrice": 5737,
+    "maxPrice": 6215,
+    "modalPrice": 5976
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-22",
+    "minPrice": 5741,
+    "maxPrice": 6219,
+    "modalPrice": 5980
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-23",
+    "minPrice": 5748,
+    "maxPrice": 6226,
+    "modalPrice": 5987
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-24",
+    "minPrice": 5771,
+    "maxPrice": 6251,
+    "modalPrice": 6011
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-25",
+    "minPrice": 5793,
+    "maxPrice": 6275,
+    "modalPrice": 6034
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-26",
+    "minPrice": 5788,
+    "maxPrice": 6270,
+    "modalPrice": 6029
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-27",
+    "minPrice": 5816,
+    "maxPrice": 6300,
+    "modalPrice": 6058
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-28",
+    "minPrice": 5791,
+    "maxPrice": 6273,
+    "modalPrice": 6032
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-29",
+    "minPrice": 5780,
+    "maxPrice": 6262,
+    "modalPrice": 6021
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-30",
+    "minPrice": 5758,
+    "maxPrice": 6238,
+    "modalPrice": 5998
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-08-31",
+    "minPrice": 5790,
+    "maxPrice": 6272,
+    "modalPrice": 6031
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-09-01",
+    "minPrice": 5645,
+    "maxPrice": 6115,
+    "modalPrice": 5880
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-09-02",
+    "minPrice": 5614,
+    "maxPrice": 6082,
+    "modalPrice": 5848
+  },
+  {
+    "mandiId": "dewas",
+    "crop": "chana",
+    "date": "2026-09-03",
+    "minPrice": 5758,
+    "maxPrice": 6238,
+    "modalPrice": 5998
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-05",
+    "minPrice": 5171,
+    "maxPrice": 5601,
+    "modalPrice": 5386
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-06",
+    "minPrice": 5174,
+    "maxPrice": 5606,
+    "modalPrice": 5390
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-07",
+    "minPrice": 5179,
+    "maxPrice": 5611,
+    "modalPrice": 5395
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-08",
+    "minPrice": 5165,
+    "maxPrice": 5595,
+    "modalPrice": 5380
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-09",
+    "minPrice": 5195,
+    "maxPrice": 5627,
+    "modalPrice": 5411
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-10",
+    "minPrice": 5194,
+    "maxPrice": 5626,
+    "modalPrice": 5410
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-11",
+    "minPrice": 5165,
+    "maxPrice": 5595,
+    "modalPrice": 5380
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-12",
+    "minPrice": 5144,
+    "maxPrice": 5572,
+    "modalPrice": 5358
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-13",
+    "minPrice": 5159,
+    "maxPrice": 5589,
+    "modalPrice": 5374
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-14",
+    "minPrice": 5154,
+    "maxPrice": 5584,
+    "modalPrice": 5369
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-15",
+    "minPrice": 5134,
+    "maxPrice": 5562,
+    "modalPrice": 5348
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-16",
+    "minPrice": 5119,
+    "maxPrice": 5545,
+    "modalPrice": 5332
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-17",
+    "minPrice": 5090,
+    "maxPrice": 5514,
+    "modalPrice": 5302
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-18",
+    "minPrice": 5075,
+    "maxPrice": 5497,
+    "modalPrice": 5286
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-19",
+    "minPrice": 5096,
+    "maxPrice": 5520,
+    "modalPrice": 5308
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-20",
+    "minPrice": 5105,
+    "maxPrice": 5531,
+    "modalPrice": 5318
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-21",
+    "minPrice": 5124,
+    "maxPrice": 5552,
+    "modalPrice": 5338
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-22",
+    "minPrice": 5114,
+    "maxPrice": 5540,
+    "modalPrice": 5327
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-23",
+    "minPrice": 5099,
+    "maxPrice": 5523,
+    "modalPrice": 5311
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-24",
+    "minPrice": 5089,
+    "maxPrice": 5513,
+    "modalPrice": 5301
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-25",
+    "minPrice": 5091,
+    "maxPrice": 5515,
+    "modalPrice": 5303
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-26",
+    "minPrice": 5062,
+    "maxPrice": 5484,
+    "modalPrice": 5273
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-27",
+    "minPrice": 5039,
+    "maxPrice": 5459,
+    "modalPrice": 5249
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-28",
+    "minPrice": 5060,
+    "maxPrice": 5482,
+    "modalPrice": 5271
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-29",
+    "minPrice": 5065,
+    "maxPrice": 5487,
+    "modalPrice": 5276
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-30",
+    "minPrice": 5052,
+    "maxPrice": 5474,
+    "modalPrice": 5263
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-08-31",
+    "minPrice": 5057,
+    "maxPrice": 5479,
+    "modalPrice": 5268
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-09-01",
+    "minPrice": 5454,
+    "maxPrice": 5908,
+    "modalPrice": 5681
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-09-02",
+    "minPrice": 5363,
+    "maxPrice": 5809,
+    "modalPrice": 5586
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "soybean",
+    "date": "2026-09-03",
+    "minPrice": 5195,
+    "maxPrice": 5627,
+    "modalPrice": 5411
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-05",
+    "minPrice": 2446,
+    "maxPrice": 2650,
+    "modalPrice": 2548
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-06",
+    "minPrice": 2449,
+    "maxPrice": 2653,
+    "modalPrice": 2551
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-07",
+    "minPrice": 2452,
+    "maxPrice": 2656,
+    "modalPrice": 2554
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-08",
+    "minPrice": 2444,
+    "maxPrice": 2648,
+    "modalPrice": 2546
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-09",
+    "minPrice": 2447,
+    "maxPrice": 2651,
+    "modalPrice": 2549
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-10",
+    "minPrice": 2449,
+    "maxPrice": 2653,
+    "modalPrice": 2551
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-11",
+    "minPrice": 2457,
+    "maxPrice": 2661,
+    "modalPrice": 2559
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-12",
+    "minPrice": 2448,
+    "maxPrice": 2652,
+    "modalPrice": 2550
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-13",
+    "minPrice": 2444,
+    "maxPrice": 2648,
+    "modalPrice": 2546
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-14",
+    "minPrice": 2439,
+    "maxPrice": 2643,
+    "modalPrice": 2541
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-15",
+    "minPrice": 2433,
+    "maxPrice": 2635,
+    "modalPrice": 2534
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-16",
+    "minPrice": 2425,
+    "maxPrice": 2627,
+    "modalPrice": 2526
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-17",
+    "minPrice": 2421,
+    "maxPrice": 2623,
+    "modalPrice": 2522
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-18",
+    "minPrice": 2416,
+    "maxPrice": 2618,
+    "modalPrice": 2517
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-19",
+    "minPrice": 2430,
+    "maxPrice": 2632,
+    "modalPrice": 2531
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-20",
+    "minPrice": 2420,
+    "maxPrice": 2622,
+    "modalPrice": 2521
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-21",
+    "minPrice": 2416,
+    "maxPrice": 2618,
+    "modalPrice": 2517
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-22",
+    "minPrice": 2410,
+    "maxPrice": 2610,
+    "modalPrice": 2510
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-23",
+    "minPrice": 2397,
+    "maxPrice": 2597,
+    "modalPrice": 2497
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-24",
+    "minPrice": 2392,
+    "maxPrice": 2592,
+    "modalPrice": 2492
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-25",
+    "minPrice": 2388,
+    "maxPrice": 2586,
+    "modalPrice": 2487
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-26",
+    "minPrice": 2388,
+    "maxPrice": 2586,
+    "modalPrice": 2487
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-27",
+    "minPrice": 2388,
+    "maxPrice": 2586,
+    "modalPrice": 2487
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-28",
+    "minPrice": 2398,
+    "maxPrice": 2598,
+    "modalPrice": 2498
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-29",
+    "minPrice": 2397,
+    "maxPrice": 2597,
+    "modalPrice": 2497
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-30",
+    "minPrice": 2392,
+    "maxPrice": 2592,
+    "modalPrice": 2492
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-08-31",
+    "minPrice": 2393,
+    "maxPrice": 2593,
+    "modalPrice": 2493
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-09-01",
+    "minPrice": 2460,
+    "maxPrice": 2664,
+    "modalPrice": 2562
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-09-02",
+    "minPrice": 2455,
+    "maxPrice": 2659,
+    "modalPrice": 2557
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "wheat",
+    "date": "2026-09-03",
+    "minPrice": 2448,
+    "maxPrice": 2652,
+    "modalPrice": 2550
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-05",
+    "minPrice": 7240,
+    "maxPrice": 7844,
+    "modalPrice": 7542
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-06",
+    "minPrice": 7251,
+    "maxPrice": 7855,
+    "modalPrice": 7553
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-07",
+    "minPrice": 7213,
+    "maxPrice": 7815,
+    "modalPrice": 7514
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-08",
+    "minPrice": 7175,
+    "maxPrice": 7773,
+    "modalPrice": 7474
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-09",
+    "minPrice": 7135,
+    "maxPrice": 7729,
+    "modalPrice": 7432
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-10",
+    "minPrice": 7104,
+    "maxPrice": 7696,
+    "modalPrice": 7400
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-11",
+    "minPrice": 7087,
+    "maxPrice": 7677,
+    "modalPrice": 7382
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-12",
+    "minPrice": 7069,
+    "maxPrice": 7659,
+    "modalPrice": 7364
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-13",
+    "minPrice": 7091,
+    "maxPrice": 7681,
+    "modalPrice": 7386
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-14",
+    "minPrice": 7076,
+    "maxPrice": 7666,
+    "modalPrice": 7371
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-15",
+    "minPrice": 7066,
+    "maxPrice": 7654,
+    "modalPrice": 7360
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-16",
+    "minPrice": 7097,
+    "maxPrice": 7689,
+    "modalPrice": 7393
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-17",
+    "minPrice": 7119,
+    "maxPrice": 7713,
+    "modalPrice": 7416
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-18",
+    "minPrice": 7092,
+    "maxPrice": 7682,
+    "modalPrice": 7387
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-19",
+    "minPrice": 7076,
+    "maxPrice": 7666,
+    "modalPrice": 7371
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-20",
+    "minPrice": 7070,
+    "maxPrice": 7660,
+    "modalPrice": 7365
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-21",
+    "minPrice": 7048,
+    "maxPrice": 7636,
+    "modalPrice": 7342
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-22",
+    "minPrice": 7084,
+    "maxPrice": 7674,
+    "modalPrice": 7379
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-23",
+    "minPrice": 7091,
+    "maxPrice": 7681,
+    "modalPrice": 7386
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-24",
+    "minPrice": 7102,
+    "maxPrice": 7694,
+    "modalPrice": 7398
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-25",
+    "minPrice": 7084,
+    "maxPrice": 7674,
+    "modalPrice": 7379
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-26",
+    "minPrice": 7072,
+    "maxPrice": 7662,
+    "modalPrice": 7367
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-27",
+    "minPrice": 7083,
+    "maxPrice": 7673,
+    "modalPrice": 7378
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-28",
+    "minPrice": 7093,
+    "maxPrice": 7685,
+    "modalPrice": 7389
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-29",
+    "minPrice": 7090,
+    "maxPrice": 7680,
+    "modalPrice": 7385
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-30",
+    "minPrice": 7112,
+    "maxPrice": 7704,
+    "modalPrice": 7408
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-08-31",
+    "minPrice": 7075,
+    "maxPrice": 7665,
+    "modalPrice": 7370
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-09-01",
+    "minPrice": 7173,
+    "maxPrice": 7771,
+    "modalPrice": 7472
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-09-02",
+    "minPrice": 7286,
+    "maxPrice": 7894,
+    "modalPrice": 7590
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "mustard",
+    "date": "2026-09-03",
+    "minPrice": 7231,
+    "maxPrice": 7833,
+    "modalPrice": 7532
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-05",
+    "minPrice": 5868,
+    "maxPrice": 6358,
+    "modalPrice": 6113
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-06",
+    "minPrice": 5901,
+    "maxPrice": 6393,
+    "modalPrice": 6147
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-07",
+    "minPrice": 5877,
+    "maxPrice": 6367,
+    "modalPrice": 6122
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-08",
+    "minPrice": 5882,
+    "maxPrice": 6372,
+    "modalPrice": 6127
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-09",
+    "minPrice": 5871,
+    "maxPrice": 6361,
+    "modalPrice": 6116
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-10",
+    "minPrice": 5868,
+    "maxPrice": 6356,
+    "modalPrice": 6112
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-11",
+    "minPrice": 5850,
+    "maxPrice": 6338,
+    "modalPrice": 6094
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-12",
+    "minPrice": 5877,
+    "maxPrice": 6367,
+    "modalPrice": 6122
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-13",
+    "minPrice": 5857,
+    "maxPrice": 6345,
+    "modalPrice": 6101
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-14",
+    "minPrice": 5855,
+    "maxPrice": 6343,
+    "modalPrice": 6099
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-15",
+    "minPrice": 5877,
+    "maxPrice": 6367,
+    "modalPrice": 6122
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-16",
+    "minPrice": 5875,
+    "maxPrice": 6365,
+    "modalPrice": 6120
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-17",
+    "minPrice": 5842,
+    "maxPrice": 6328,
+    "modalPrice": 6085
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-18",
+    "minPrice": 5816,
+    "maxPrice": 6300,
+    "modalPrice": 6058
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-19",
+    "minPrice": 5796,
+    "maxPrice": 6280,
+    "modalPrice": 6038
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-20",
+    "minPrice": 5800,
+    "maxPrice": 6284,
+    "modalPrice": 6042
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-21",
+    "minPrice": 5794,
+    "maxPrice": 6276,
+    "modalPrice": 6035
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-22",
+    "minPrice": 5809,
+    "maxPrice": 6293,
+    "modalPrice": 6051
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-23",
+    "minPrice": 5810,
+    "maxPrice": 6294,
+    "modalPrice": 6052
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-24",
+    "minPrice": 5796,
+    "maxPrice": 6280,
+    "modalPrice": 6038
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-25",
+    "minPrice": 5788,
+    "maxPrice": 6270,
+    "modalPrice": 6029
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-26",
+    "minPrice": 5783,
+    "maxPrice": 6265,
+    "modalPrice": 6024
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-27",
+    "minPrice": 5771,
+    "maxPrice": 6251,
+    "modalPrice": 6011
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-28",
+    "minPrice": 5804,
+    "maxPrice": 6288,
+    "modalPrice": 6046
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-29",
+    "minPrice": 5787,
+    "maxPrice": 6269,
+    "modalPrice": 6028
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-30",
+    "minPrice": 5774,
+    "maxPrice": 6256,
+    "modalPrice": 6015
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-08-31",
+    "minPrice": 5760,
+    "maxPrice": 6240,
+    "modalPrice": 6000
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-09-01",
+    "minPrice": 5732,
+    "maxPrice": 6210,
+    "modalPrice": 5971
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-09-02",
+    "minPrice": 5700,
+    "maxPrice": 6176,
+    "modalPrice": 5938
+  },
+  {
+    "mandiId": "bhopal",
+    "crop": "chana",
+    "date": "2026-09-03",
+    "minPrice": 5846,
+    "maxPrice": 6334,
+    "modalPrice": 6090
+  }
+]
