@@ -663,8 +663,8 @@ export default function DashboardPage({ language }: DashboardPageProps) {
         ? 'आपका स्थान'
         : 'Your location'
       : language === 'hi'
-        ? 'डेटासेट केंद्र'
-        : 'Dataset centre',
+        ? 'मेरा स्थान'
+        : 'My location',
   };
 
   return (

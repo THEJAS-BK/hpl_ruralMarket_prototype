@@ -16,6 +16,7 @@ import {
   Market,
 } from './store';
 import { haversineKm } from './geo';
+import { analyzeBasket, BasketItem } from './basket';
 
 const router = Router();
 
@@ -215,6 +216,90 @@ router.get('/api/recommend', (req: Request, res: Response) => {
     recommended,
     runnerUp,
     reason,
+  });
+});
+
+// 9. POST /api/analyze
+router.post('/api/analyze', (req: Request, res: Response) => {
+  const body = req.body;
+  if (!body || typeof body !== 'object' || !Array.isArray(body.items)) {
+    return err(res, 400, 'items must be a non-empty array');
+  }
+  if (body.items.length === 0) {
+    return err(res, 400, 'items must be a non-empty array');
+  }
+
+  const dedup = new Map<string, BasketItem>();
+  for (const raw of body.items) {
+    if (!raw || typeof raw !== 'object') {
+      return err(res, 400, 'items must be an array of { commodityId, qtyKg }');
+    }
+    const commodityId = raw.commodityId;
+    const qtyKg = raw.qtyKg;
+    if (!commodityById[commodityId]) {
+      return err(res, 400, `Invalid commodity '${commodityId}'`);
+    }
+    if (typeof qtyKg !== 'number' || !Number.isFinite(qtyKg) || qtyKg <= 0) {
+      return err(res, 400, 'qtyKg must be a positive number');
+    }
+    dedup.set(commodityId, { commodityId, qtyKg });
+  }
+  if (dedup.size > 50) {
+    return err(res, 400, 'At most 50 distinct items are allowed');
+  }
+  const items = [...dedup.values()];
+
+  const origin = parseOrigin(typeof body.origin === 'string' ? body.origin : undefined);
+  if (!origin) {
+    return err(res, 400, 'origin must be "lat,lng" with valid coordinates');
+  }
+
+  let state: string | undefined;
+  if (body.state !== undefined && body.state !== '') {
+    const matched = states.find((s) => s.toLowerCase() === String(body.state).toLowerCase());
+    if (!matched) {
+      return err(res, 400, `Invalid state '${body.state}'`);
+    }
+    state = matched;
+  }
+
+  const rankings = analyzeBasket(items, origin, state);
+  const eligible = rankings.filter((r) => r.missing.length === 0);
+  const best = eligible[0] ?? null;
+  const runnerUp = eligible[1] ?? null;
+
+  let reason = '';
+  if (best && runnerUp) {
+    const nameA = best.market.name;
+    const nameB = runnerUp.market.name;
+    const netDiff = best.netRevenue - runnerUp.netRevenue;
+    if (netDiff === 0) {
+      reason = `${nameA} and ${nameB} are tied on net revenue; ${nameA} is closer at ${best.distanceKm} km vs ${runnerUp.distanceKm} km`;
+    } else if (best.totalRevenue > runnerUp.totalRevenue) {
+      const revDiff = best.totalRevenue - runnerUp.totalRevenue;
+      reason = `${nameA} nets ₹${netDiff} more than ${nameB} thanks to ₹${revDiff} higher basket revenue`;
+    } else if (best.transportCost < runnerUp.transportCost) {
+      const pct = Math.round(((runnerUp.transportCost - best.transportCost) / runnerUp.transportCost) * 100);
+      reason = `${nameA} nets ₹${netDiff} more than ${nameB} due to ${pct}% lower transport cost`;
+    } else {
+      reason = `${nameA} nets ₹${netDiff} more than ${nameB}`;
+    }
+  } else if (best) {
+    reason = `${best.market.name} is the only market reporting all of your basket; estimated net revenue ₹${best.netRevenue}`;
+  } else if (rankings.length > 0) {
+    reason =
+      'No single market reports your whole basket. Markets below are missing one or more crops; their estimates are partial.';
+  } else {
+    reason = 'No market reports any of these commodities. Try a different basket or include commodities available nearby.';
+  }
+
+  res.json({
+    items,
+    origin: { lat: origin.lat, lng: origin.lng },
+    best,
+    runnerUp,
+    reason,
+    rankings,
   });
 });
 

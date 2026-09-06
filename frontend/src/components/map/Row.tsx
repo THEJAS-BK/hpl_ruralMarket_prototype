@@ -1,10 +1,12 @@
+import type { ReactNode } from 'react';
+
 export default function Row({
   label,
   value,
   negative,
   accent,
 }: {
-  label: string;
+  label: ReactNode;
   value: string;
   negative?: boolean;
   accent?: boolean;

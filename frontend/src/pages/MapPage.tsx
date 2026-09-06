@@ -22,6 +22,7 @@ import {
   referenceIcon,
 } from '../components/map';
 import type { EntryWithRoute, EntryPair } from '../components/map';
+import { AdvanceSearchButton, AdvanceSearchModal } from '../components/advance';
 
 interface MapPageProps {
   language: Language;
@@ -49,6 +50,9 @@ export default function MapPage({ language }: MapPageProps) {
   const [flyTo, setFlyTo] = useState<[number, number] | null>(null);
   const [search, setSearch] = useState('');
   const [toast, setToast] = useState<string | null>(null);
+  const [advanceOpen, setAdvanceOpen] = useState(false);
+  const [advanceTarget, setAdvanceTarget] = useState<Market | null>(null);
+  const [advanceRoute, setAdvanceRoute] = useState<RouteInfo | null>(null);
 
   useEffect(() => {
     let active = true;
@@ -224,15 +228,30 @@ export default function MapPage({ language }: MapPageProps) {
     setSelected([]);
     setRoutes({});
     setRouteErrors({});
+    setAdvanceTarget(null);
+    setAdvanceRoute(null);
   };
+
+  const showAdvanceMarket = useCallback(
+    (market: Market) => {
+      setSelected([market.id]);
+      setFlyTo([market.lat, market.lng]);
+      if (!priceMap[market.id]) {
+        getRoute(origin, { lat: market.lat, lng: market.lng })
+          .then((r) => setAdvanceRoute(r))
+          .catch(() => setAdvanceRoute(null));
+      }
+    },
+    [origin, priceMap],
+  );
 
   const originLabel = origin.isLive
     ? language === 'hi'
       ? 'आपका स्थान'
       : 'Your location'
     : language === 'hi'
-      ? 'डेटासेट केंद्र'
-      : 'Dataset centre';
+      ? 'मेरा स्थान'
+      : 'My location';
 
   const t = {
     searchMarket:
@@ -295,6 +314,24 @@ export default function MapPage({ language }: MapPageProps) {
                 </Tooltip>
               </Polyline>
             ) : null,
+          )}
+
+          {advanceTarget && advanceRoute && !priceMap[advanceTarget.id] && (
+            <Polyline
+              key="advance-route"
+              positions={advanceRoute.coordinates}
+              pathOptions={{
+                color: '#10b981',
+                weight: 4,
+                opacity: 0.85,
+              }}
+            >
+              <Tooltip sticky>
+                {advanceTarget.name} ·{' '}
+                {Math.round(advanceRoute.distanceKm * 10) / 10} km ·{' '}
+                {formatDuration(advanceRoute.durationMin)}
+              </Tooltip>
+            </Polyline>
           )}
 
           {/* Market markers */}
@@ -485,6 +522,16 @@ export default function MapPage({ language }: MapPageProps) {
         <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[1300] flex items-center gap-2 bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-lg text-sm">
           {toast}
         </div>
+      )}
+      <AdvanceSearchButton language={language} onClick={() => setAdvanceOpen(true)} />
+      {advanceOpen && (
+        <AdvanceSearchModal
+          language={language}
+          commodities={commodities}
+          origin={{ lat: origin.lat, lng: origin.lng }}
+          onClose={() => setAdvanceOpen(false)}
+          onShowMarket={showAdvanceMarket}
+        />
       )}
     </div>
   );

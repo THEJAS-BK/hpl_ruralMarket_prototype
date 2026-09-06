@@ -1,4 +1,6 @@
 import type {
+  BasketAnalysis,
+  BasketItem,
   Commodity,
   CompareResult,
   HistoryPoint,
@@ -23,6 +25,30 @@ async function request<T>(path: string): Promise<T> {
     try {
       const body = await res.json();
       if (body && typeof body.error === 'string') message = body.error;
+    } catch {
+      // response was not JSON — keep the status message
+    }
+    throw new Error(message);
+  }
+  return res.json() as Promise<T>;
+}
+
+async function requestPost<T>(path: string, body: unknown): Promise<T> {
+  let res: Response;
+  try {
+    res = await fetch(`${BASE}${path}`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+  } catch {
+    throw new Error('Network error — backend unreachable');
+  }
+  if (!res.ok) {
+    let message = `Request failed (${res.status})`;
+    try {
+      const b = await res.json();
+      if (b && typeof b.error === 'string') message = b.error;
     } catch {
       // response was not JSON — keep the status message
     }
@@ -126,4 +152,17 @@ export function haversineKm(
 
 export function transportCostFor(km: number): number {
   return Math.round(km * 0.1);
+}
+
+export async function analyzeBasket(
+  items: BasketItem[],
+  origin?: { lat: number; lng: number },
+  state?: string,
+): Promise<BasketAnalysis> {
+  const payload = {
+    items,
+    origin: origin ? `${origin.lat},${origin.lng}` : undefined,
+    state,
+  };
+  return requestPost<BasketAnalysis>('/analyze', payload);
 }

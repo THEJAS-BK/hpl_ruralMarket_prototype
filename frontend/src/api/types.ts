@@ -66,3 +66,35 @@ export interface RecommendResult {
   runnerUp: CompareEntry;
   reason: string;
 }
+
+export interface BasketItem {
+  commodityId: string;
+  qtyKg: number;
+}
+
+export interface BasketItemResult {
+  commodityId: string;
+  name: string;
+  qtyKg: number;
+  modalPrice: number;
+  revenue: number;
+}
+
+export interface BasketMarketResult {
+  market: Market;
+  items: BasketItemResult[];
+  missing: string[];
+  totalRevenue: number;
+  distanceKm: number;
+  transportCost: number;
+  netRevenue: number;
+}
+
+export interface BasketAnalysis {
+  items: BasketItem[];
+  origin: { lat: number; lng: number };
+  best: BasketMarketResult | null;
+  runnerUp: BasketMarketResult | null;
+  reason: string;
+  rankings: BasketMarketResult[];
+}
