@@ -1,11 +1,6 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { MapContainer, TileLayer, Marker, Tooltip, Polyline } from 'react-leaflet';
-import {
-  MapPin,
-  Search,
-  Store,
-  Loader2,
-} from 'lucide-react';
+import { MapPin, Search, Loader2 } from 'lucide-react';
 import type { Language, CropId, Mandi, SpotPrice } from '../api/types';
 import { getMandis, getPrices } from '../api/client';
 import { MANDIS, CROPS, REFERENCE_POINT, TRANSPORT_RATE_PER_KM_PER_QTL } from '../api/mockData';
@@ -186,41 +181,9 @@ export default function MapPage({ language }: MapPageProps) {
   );
 
   return (
-    <div className="flex flex-col w-full gap-4">
-      {/* Header bar */}
-      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
-        <div>
-          <h1 className="text-headline-md font-headline-md text-slate-900">
-            {language === 'hi' ? 'मंडी नक्शा' : 'Mandi Map'}
-          </h1>
-          <p className="text-body-sm text-slate-500">
-            {language === 'hi'
-              ? 'मालवा क्षेत्र की मंडियों के भाव देखें और तुलना करें'
-              : 'Browse and compare mandi spot prices across Malwa'}
-          </p>
-        </div>
-        <div className="flex items-center gap-2 overflow-x-auto">
-          {CROPS.map((c) => (
-            <button
-              key={c.id}
-              onClick={() => handleSelectCrop(c.id)}
-              className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer whitespace-nowrap ${
-                cropId === c.id
-                  ? 'bg-indigo-600 text-white shadow-sm'
-                  : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-50'
-              }`}
-              type="button"
-            >
-              {language === 'hi' ? c.nameHi : c.name}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
-        {/* Map + search */}
-        <div className="relative w-full h-[520px] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-sm lg:col-span-8">
-          <MapContainer
+    <div className="relative w-full h-[calc(100dvh-3.5rem)]">
+      <div className="absolute inset-0 bg-slate-100">
+        <MapContainer
             center={[22.95, 75.9]}
             zoom={9}
             className="w-full h-full"
@@ -357,6 +320,24 @@ export default function MapPage({ language }: MapPageProps) {
             </span>
           </div>
 
+          {/* Crop chips */}
+          <div className="absolute top-14 right-3 z-[1000] flex items-center gap-2 overflow-x-auto max-w-[calc(100%-1rem)]">
+            {CROPS.map((c) => (
+              <button
+                key={c.id}
+                onClick={() => handleSelectCrop(c.id)}
+                className={`px-3 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer whitespace-nowrap ${
+                  cropId === c.id
+                    ? 'bg-indigo-600 text-white shadow-sm'
+                    : 'bg-white/95 backdrop-blur text-slate-600 border border-slate-200 hover:bg-slate-50'
+                }`}
+                type="button"
+              >
+                {language === 'hi' ? c.nameHi : c.name}
+              </button>
+            ))}
+          </div>
+
           {/* Legend */}
           <div className="absolute bottom-3 left-3 z-[1000] flex items-center gap-3 bg-white/95 backdrop-blur px-3 py-1.5 rounded-xl shadow-sm border border-slate-200 text-[11px] text-slate-600">
             <span className="flex items-center gap-1.5">
@@ -374,25 +355,17 @@ export default function MapPage({ language }: MapPageProps) {
           </div>
         </div>
 
-        {/* Mobile bottom drawer (fixed) rendering of ComparePanel */}
-        {entries.length === 0 && (
-          <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex items-center justify-center text-sm text-slate-500 lg:col-span-4">
-            {language === 'hi'
-              ? 'लागत देखने के लिए नक्शे पर एक मंडी चुनें।'
-              : 'Select a mandi on the map to see its cost.'}
-          </div>
-        )}
-
+        {/* Overlapping cost cards */}
         {entries.length === 1 && (
           <>
-            <div className="lg:hidden fixed bottom-3 left-3 right-3 z-[1100]">
+            <div className="sm:hidden fixed bottom-3 left-3 right-3 z-[1100]">
               <MandiCostCard
                 entry={entries[0]}
                 language={language}
                 onClose={() => setSelected([])}
               />
             </div>
-            <div className="hidden lg:block lg:col-span-4">
+            <div className="hidden sm:block absolute right-4 bottom-4 z-[1000] w-[360px] max-h-[calc(100%-8rem)] overflow-y-auto shadow-xl">
               <MandiCostCard
                 entry={entries[0]}
                 language={language}
@@ -404,7 +377,7 @@ export default function MapPage({ language }: MapPageProps) {
 
         {entries.length === 2 && (
           <>
-            <div className="lg:hidden fixed bottom-3 left-3 right-3 z-[1100]">
+            <div className="sm:hidden fixed bottom-3 left-3 right-3 z-[1100]">
               <div className="max-h-[60vh] overflow-y-auto">
                 <ComparePanel
                   entries={entries as EntryPair}
@@ -413,7 +386,7 @@ export default function MapPage({ language }: MapPageProps) {
                 />
               </div>
             </div>
-            <div className="hidden lg:block lg:col-span-4">
+            <div className="hidden sm:block absolute right-4 bottom-4 z-[1000] w-[560px] max-w-[calc(100%-2rem)] max-h-[calc(100%-8rem)] overflow-y-auto shadow-xl">
               <ComparePanel
                 entries={entries as EntryPair}
                 language={language}
@@ -422,14 +395,12 @@ export default function MapPage({ language }: MapPageProps) {
             </div>
           </>
         )}
-      </div>
-
       {/* Toast */}
-      {toast && (
-        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[1200] flex items-center gap-2 bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-lg text-sm">
-          {toast}
-        </div>
-      )}
-    </div>
+        {toast && (
+          <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-[1200] flex items-center gap-2 bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-lg text-sm">
+            {toast}
+          </div>
+        )}
+      </div>
   );
 }
