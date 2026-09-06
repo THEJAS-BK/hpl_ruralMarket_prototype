@@ -1,248 +1,43 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
-import { MapContainer, TileLayer, Marker, Tooltip, useMap } from 'react-leaflet';
-import L from 'leaflet';
+import { MapContainer, TileLayer, Marker, Tooltip, Polyline } from 'react-leaflet';
 import {
   MapPin,
   Search,
   Store,
-  TrendingUp,
-  TrendingDown,
-  Minus,
-  X,
   Loader2,
-  ArrowUpRight,
 } from 'lucide-react';
-import type { Language, CropId, Mandi, SpotPrice, CompareResult } from '../api/types';
-import { getMandis, getPrices, compareMandis } from '../api/client';
-import { MANDIS, REFERENCE_POINT } from '../api/mockData';
+import type { Language, CropId, Mandi, SpotPrice } from '../api/types';
+import { getMandis, getPrices } from '../api/client';
+import { MANDIS, CROPS, REFERENCE_POINT, TRANSPORT_RATE_PER_KM_PER_QTL } from '../api/mockData';
+import { getRoute } from '../api/routing';
+import type { RouteInfo } from '../api/routing';
+import { formatDuration } from '../utils/format';
+import {
+  FlyTo,
+  ComparePanel,
+  MandiCostCard,
+  PriceTrend,
+  mandiPinIcon,
+  referenceIcon,
+} from '../components/map';
+import type { EntryWithRoute, EntryPair } from '../components/map';
 
 interface MapPageProps {
   language: Language;
 }
 
-const CROPS: { id: CropId; name: string; nameHi: string }[] = [
-  { id: 'soybean', name: 'Soybean', nameHi: 'सोयाबीन' },
-  { id: 'wheat', name: 'Wheat', nameHi: 'गेहूं' },
-  { id: 'chana', name: 'Chana', nameHi: 'चना' },
-  { id: 'mustard', name: 'Mustard', nameHi: 'सरसों' },
-];
-
-function mandiPinIcon(active: boolean): L.DivIcon {
-  const color = active ? '#10b981' : '#4f46e5';
-  return L.divIcon({
-    className: '',
-    html: `
-      <div style="position:relative;width:28px;height:28px;display:flex;transform:translate(-50%,-100%);">
-        <div style="width:28px;height:28px;background:${color};border:2.5px solid #ffffff;border-radius:50% 50% 50% 0;transform:rotate(-45deg);box-shadow:0 3px 8px rgba(15,23,42,0.35);display:flex;align-items:center;justify-content:center;">
-          <div style="width:9px;height:9px;background:#ffffff;border-radius:50%;transform:rotate(45deg);"></div>
-        </div>
-      </div>`,
-    iconSize: [28, 28],
-    iconAnchor: [14, 28],
-  });
-}
-
-function referenceIcon(): L.DivIcon {
-  return L.divIcon({
-    className: '',
-    html: `
-      <div style="position:relative;width:30px;height:30px;transform:translate(-50%,-100%);">
-        <div style="width:30px;height:30px;background:#0f172a;border:3px solid #ffffff;border-radius:50%;box-shadow:0 3px 8px rgba(15,23,42,0.4);display:flex;align-items:center;justify-content:center;">
-          <div style="width:11px;height:11px;border-radius:2px;background:#ffffff;position:relative;">
-            <span style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:12px;line-height:1;color:#0f172a;font-weight:800;">H</span>
-          </div>
-        </div>
-      </div>`,
-    iconSize: [30, 30],
-    iconAnchor: [15, 30],
-  });
-}
-
-function FlyTo({ position }: { position: [number, number] | null }) {
-  const map = useMap();
-  useEffect(() => {
-    if (position) {
-      map.flyTo(position, 10, { duration: 1.2 });
-    }
-  }, [map, position]);
-  return null;
-}
-
-function ComparePanel({
-  mandiA,
-  mandiB,
-  cropId,
-  language,
-  onClose,
-}: {
-  key?: React.Key;
-  mandiA: Mandi;
-  mandiB: Mandi;
-  cropId: CropId;
-  language: Language;
-  onClose: () => void;
-}) {
-  const [result, setResult] = useState<CompareResult | null>(null);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(false);
-
-  useEffect(() => {
-    let active = true;
-    setLoading(true);
-    setError(false);
-    setResult(null);
-    compareMandis(cropId, mandiA.id, mandiB.id)
-      .then((res) => {
-        if (active) setResult(res);
-      })
-      .catch(() => {
-        if (active) setError(true);
-      })
-      .finally(() => {
-        if (active) setLoading(false);
-      });
-    return () => {
-      active = false;
-    };
-  }, [cropId, mandiA.id, mandiB.id]);
-
-  const t = {
-    spotPrice: language === 'hi' ? 'स्पॉट भाव' : 'Spot Price',
-    distance: language === 'hi' ? 'दूरी' : 'Distance',
-    transport: language === 'hi' ? 'परिवहन लागत' : 'Transport Cost',
-    netRevenue: language === 'hi' ? 'शुद्ध आय' : 'Net Revenue',
-    betterPick: language === 'hi' ? 'बेहतर विकल्प' : 'Better Pick',
-    perQtl: '/Quintal',
-    vs: language === 'hi' ? 'बनाम' : 'vs',
-    loading: language === 'hi' ? 'तुलना हो रही है...' : 'Loading comparison...',
-  };
-
-  return (
-    <div className="bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
-      <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100">
-        <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-          {language === 'hi' ? 'मंडी तुलना' : 'Mandi Comparison'}
-        </span>
-        <button
-          onClick={onClose}
-          className="w-7 h-7 flex items-center justify-center text-slate-400 hover:bg-slate-100 rounded-lg transition-colors cursor-pointer"
-          type="button"
-          aria-label="Close"
-        >
-          <X className="w-4 h-4" />
-        </button>
-      </div>
-
-      {error ? (
-        <div className="p-6 text-center text-sm text-slate-500">
-          {language === 'hi'
-            ? 'तुलना लोड करने में त्रुटि हुई।'
-            : 'Failed to load comparison.'}
-        </div>
-      ) : loading || !result ? (
-        <div className="p-6 flex items-center justify-center gap-2 text-sm text-slate-400">
-          <Loader2 className="w-4 h-4 animate-spin" />
-          <span>{t.loading}</span>
-        </div>
-      ) : (
-        <div className="grid grid-cols-[1fr_auto_1fr]">
-          <PanelCard entry={result.entries[0]} better={result.betterMandiId === result.entries[0].mandi.id} language={language} t={t} />
-          <div className="flex items-center justify-center px-1">
-            <span className="text-[10px] font-semibold text-slate-400 uppercase">{t.vs}</span>
-          </div>
-          <PanelCard entry={result.entries[1]} better={result.betterMandiId === result.entries[1].mandi.id} language={language} t={t} />
-        </div>
-      )}
-    </div>
-  );
-}
-
-function PanelCard({
-  entry,
-  better,
-  language,
-  t,
-}: {
-  entry: CompareResult['entries'][number];
-  better: boolean;
-  language: Language;
-  t: Record<string, string>;
-}) {
-  const name = language === 'hi' ? entry.mandi.nameHi : entry.mandi.name;
-  const district = language === 'hi' ? entry.mandi.districtHi : entry.mandi.district;
-  return (
-    <div className={`p-4 flex flex-col gap-2 ${better ? 'bg-emerald-50/60' : 'bg-white'}`}>
-      {better && (
-        <span className="inline-flex items-center gap-1 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded-full w-fit">
-          <ArrowUpRight className="w-3 h-3" />
-          {t.betterPick}
-        </span>
-      )}
-      <div className="flex items-center gap-1.5">
-        <Store className={`w-3.5 h-3.5 ${better ? 'text-emerald-600' : 'text-slate-400'}`} />
-        <div className="min-w-0">
-          <p className="text-sm font-bold text-slate-900 truncate">{name}</p>
-          <p className="text-[11px] text-slate-500 truncate">{district}</p>
-        </div>
-      </div>
-      <div className="flex flex-col gap-1 text-xs mt-1">
-        <Row label={t.spotPrice} value={`₹${entry.price.toLocaleString('en-IN')}`} accent />
-        <Row label={t.distance} value={`${entry.distanceKm} km`} />
-        <Row label={t.transport} value={`-₹${entry.transportCostPerQtl.toLocaleString('en-IN')}`} negative />
-      </div>
-      <div className={`mt-2 pt-2 border-t ${better ? 'border-emerald-100' : 'border-slate-100'}`}>
-        <span className="text-[10px] text-slate-400 uppercase font-semibold block">
-          {t.netRevenue} ({t.perQtl})
-        </span>
-        <span className={`text-lg font-bold ${better ? 'text-emerald-700' : 'text-slate-700'}`}>
-          ₹{entry.netRevenue.toLocaleString('en-IN')}
-        </span>
-      </div>
-    </div>
-  );
-}
-
-function Row({
-  label,
-  value,
-  negative,
-  accent,
-}: {
-  label: string;
-  value: string;
-  negative?: boolean;
-  accent?: boolean;
-}) {
-  return (
-    <div className="flex items-center justify-between gap-2">
-      <span className="text-slate-400">{label}</span>
-      <span
-        className={`font-semibold ${
-          negative ? 'text-red-600' : accent ? 'text-indigo-600' : 'text-slate-700'
-        }`}
-      >
-        {value}
-      </span>
-    </div>
-  );
-}
-
-function PriceTrend({ spot }: { spot?: SpotPrice }) {
-  if (!spot) return null;
-  const Icon = spot.trend === 'up' ? TrendingUp : spot.trend === 'down' ? TrendingDown : Minus;
-  const color = spot.trend === 'up' ? 'text-emerald-600' : spot.trend === 'down' ? 'text-red-600' : 'text-slate-400';
-  return (
-    <span className={`inline-flex items-center gap-0.5 text-[11px] font-semibold ${color}`}>
-      <Icon className="w-3 h-3" />
-      {spot.changeRs > 0 ? '+' : ''}
-      {spot.changeRs}
-    </span>
-  );
-}
+type Origin = { lat: number; lng: number; isLive: boolean };
 
 export default function MapPage({ language }: MapPageProps) {
   const [mandis, setMandis] = useState<Mandi[]>(MANDIS);
   const [selected, setSelected] = useState<string[]>([]);
+  const [origin, setOrigin] = useState<Origin>({
+    lat: REFERENCE_POINT.lat,
+    lng: REFERENCE_POINT.lng,
+    isLive: false,
+  });
+  const [routes, setRoutes] = useState<Record<string, RouteInfo>>({});
+  const [routeErrors, setRouteErrors] = useState<Record<string, boolean>>({});
   const [cropId, setCropId] = useState<CropId>('soybean');
   const [prices, setPrices] = useState<Record<string, SpotPrice>>({});
   const [loadingPrices, setLoadingPrices] = useState(false);
@@ -277,10 +72,70 @@ export default function MapPage({ language }: MapPageProps) {
     };
   }, [cropId]);
 
+  useEffect(() => {
+    if (!navigator.geolocation) return;
+    navigator.geolocation.getCurrentPosition(
+      (pos) =>
+        setOrigin({
+          lat: pos.coords.latitude,
+          lng: pos.coords.longitude,
+          isLive: true,
+        }),
+      () => {
+        /* denied / unavailable — farm-gate default from initial state stands */
+      },
+      { enableHighAccuracy: true, timeout: 8000 },
+    );
+  }, []);
+
+  const originKey = `${origin.lat.toFixed(4)},${origin.lng.toFixed(4)}`;
+
   const selectedMandis = useMemo(
-    () => selected.map((id) => mandis.find((m) => m.id === id)).filter(Boolean) as Mandi[],
-    [selected, mandis]
+    () => mandis.filter((m) => selected.includes(m.id)),
+    [mandis, selected],
   );
+
+  const entries: EntryWithRoute[] = useMemo(
+    () =>
+      selectedMandis.map((mandi) => {
+        const price = prices[mandi.id]?.price ?? 0;
+        const route = routes[`${originKey}:${mandi.id}`];
+        const distanceKm = route
+          ? Math.round(route.distanceKm * 10) / 10
+          : mandi.distanceKm;
+        const transportCostPerQtl = route
+          ? Math.round(route.distanceKm * TRANSPORT_RATE_PER_KM_PER_QTL)
+          : mandi.transportCostPerQtl;
+        return {
+          mandi,
+          price,
+          distanceKm,
+          transportCostPerQtl,
+          netRevenue: price - transportCostPerQtl,
+          route,
+        };
+      }),
+    [selectedMandis, prices, routes, originKey],
+  );
+
+  useEffect(() => {
+    let active = true;
+    selected.forEach((mandiId) => {
+      const mandi = mandis.find((m) => m.id === mandiId);
+      const key = `${originKey}:${mandiId}`;
+      if (!mandi || routes[key] || routeErrors[key]) return;
+      getRoute(origin, { lat: mandi.lat, lng: mandi.lng })
+        .then((r) => {
+          if (active) setRoutes((prev) => ({ ...prev, [key]: r }));
+        })
+        .catch(() => {
+          if (active) setRouteErrors((prev) => ({ ...prev, [key]: true }));
+        });
+    });
+    return () => {
+      active = false;
+    };
+  }, [selected, origin, originKey, mandis, routes, routeErrors]);
 
   const toggleSelect = useCallback(
     (id: string) => {
@@ -365,7 +220,12 @@ export default function MapPage({ language }: MapPageProps) {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
         {/* Map + search */}
         <div className="relative w-full h-[520px] bg-slate-100 rounded-2xl overflow-hidden border border-slate-200 shadow-sm lg:col-span-8">
-          <MapContainer center={[22.95, 75.9]} zoom={9} className="w-full h-full" scrollWheelZoom>
+          <MapContainer
+            center={[22.95, 75.9]}
+            zoom={9}
+            className="w-full h-full"
+            scrollWheelZoom
+          >
             <TileLayer
               attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -373,21 +233,47 @@ export default function MapPage({ language }: MapPageProps) {
             <FlyTo position={flyTo} />
 
             {/* Reference point marker */}
-            <Marker
-              position={[REFERENCE_POINT.lat, REFERENCE_POINT.lng]}
-              icon={referenceIcon()}
-            >
+            <Marker position={[origin.lat, origin.lng]} icon={referenceIcon()}>
               <Tooltip direction="top" offset={[0, -30]} opacity={1}>
                 <div className="flex flex-col">
                   <span className="font-semibold">
-                    {language === 'hi' ? REFERENCE_POINT.nameHi : REFERENCE_POINT.name}
+                    {origin.isLive
+                      ? language === 'hi'
+                        ? 'आपका स्थान'
+                        : 'Your location'
+                      : language === 'hi'
+                        ? REFERENCE_POINT.nameHi
+                        : REFERENCE_POINT.name}
                   </span>
-                  <span className="text-slate-500 text-xs">
-                    {language === 'hi' ? 'फार्म गेट' : 'Farm gate'}
-                  </span>
+                  {!origin.isLive && (
+                    <span className="text-slate-500 text-xs">
+                      {language === 'hi'
+                        ? 'फार्म गेट (डिफ़ॉल्ट)'
+                        : 'Farm gate (default)'}
+                    </span>
+                  )}
                 </div>
               </Tooltip>
             </Marker>
+            {entries.map((entry, idx) =>
+              entry.route ? (
+                <Polyline
+                  key={`route-${entry.mandi.id}`}
+                  positions={entry.route.coordinates}
+                  pathOptions={{
+                    color: idx === 0 ? '#10b981' : '#f59e0b',
+                    weight: 4,
+                    opacity: 0.85,
+                  }}
+                >
+                  <Tooltip sticky>
+                    {language === 'hi' ? entry.mandi.nameHi : entry.mandi.name}{' '}
+                    · {entry.distanceKm} km ·{' '}
+                    {formatDuration(entry.route.durationMin)}
+                  </Tooltip>
+                </Polyline>
+              ) : null,
+            )}
 
             {/* Mandi markers */}
             {mandis.map((m) => {
@@ -412,7 +298,9 @@ export default function MapPage({ language }: MapPageProps) {
                       {priceMapFor(m.id) && (
                         <span className="text-indigo-600 font-bold text-sm">
                           ₹{priceMapFor(m.id)!.price.toLocaleString('en-IN')}
-                          <span className="text-slate-400 text-[10px] font-normal">/q</span>
+                          <span className="text-slate-400 text-[10px] font-normal">
+                            /q
+                          </span>
                           <PriceTrend spot={priceMapFor(m.id)} />
                         </span>
                       )}
@@ -432,7 +320,9 @@ export default function MapPage({ language }: MapPageProps) {
             <input
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              placeholder={language === 'hi' ? 'मंडी खोजें...' : 'Search mandi...'}
+              placeholder={
+                language === 'hi' ? 'मंडी खोजें...' : 'Search mandi...'
+              }
               className="w-full bg-transparent px-2 py-2 text-xs text-slate-900 placeholder:text-slate-400 focus:outline-none"
             />
             <button
@@ -455,6 +345,16 @@ export default function MapPage({ language }: MapPageProps) {
               <MapPin className="w-3.5 h-3.5 text-indigo-400" />
               {selected.length} / 2
             </span>
+            <span className="inline-flex items-center gap-1.5 bg-white/95 backdrop-blur px-2.5 py-1.5 rounded-xl shadow-sm border border-slate-200 text-[11px] text-slate-600">
+              <MapPin className="w-3.5 h-3.5 text-slate-900" />
+              {origin.isLive
+                ? language === 'hi'
+                  ? 'आपका स्थान'
+                  : 'Your location'
+                : language === 'hi'
+                  ? 'फार्म गेट (डिफ़ॉल्ट)'
+                  : 'Farm gate (default)'}
+            </span>
           </div>
 
           {/* Legend */}
@@ -475,28 +375,26 @@ export default function MapPage({ language }: MapPageProps) {
         </div>
 
         {/* Mobile bottom drawer (fixed) rendering of ComparePanel */}
-        {selectedMandis.length === 2 && (
+        {entries.length === 0 && (
+          <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex items-center justify-center text-sm text-slate-500 lg:col-span-4">
+            {language === 'hi'
+              ? 'लागत देखने के लिए नक्शे पर एक मंडी चुनें।'
+              : 'Select a mandi on the map to see its cost.'}
+          </div>
+        )}
+
+        {entries.length === 1 && (
           <>
-            {/* Mobile bottom sheet */}
             <div className="lg:hidden fixed bottom-3 left-3 right-3 z-[1100]">
-              <div className="max-h-[60vh] overflow-y-auto">
-                <ComparePanel
-                  key={`${selectedMandis[0].id}-${selectedMandis[1].id}-${cropId}`}
-                  mandiA={selectedMandis[0]}
-                  mandiB={selectedMandis[1]}
-                  cropId={cropId}
-                  language={language}
-                  onClose={() => setSelected([])}
-                />
-              </div>
+              <MandiCostCard
+                entry={entries[0]}
+                language={language}
+                onClose={() => setSelected([])}
+              />
             </div>
-            {/* Desktop side panel */}
             <div className="hidden lg:block lg:col-span-4">
-              <ComparePanel
-                key={`desk-${selectedMandis[0].id}-${selectedMandis[1].id}-${cropId}`}
-                mandiA={selectedMandis[0]}
-                mandiB={selectedMandis[1]}
-                cropId={cropId}
+              <MandiCostCard
+                entry={entries[0]}
                 language={language}
                 onClose={() => setSelected([])}
               />
@@ -504,13 +402,25 @@ export default function MapPage({ language }: MapPageProps) {
           </>
         )}
 
-        {/* Placeholder when fewer than 2 selected */}
-        {selectedMandis.length !== 2 && (
-          <div className="bg-white border border-slate-200 rounded-2xl p-5 shadow-sm flex items-center justify-center text-sm text-slate-500 lg:col-span-4">
-            {language === 'hi'
-              ? 'तुलना के लिए नक्शे पर दो मंडियाँ चुनें।'
-              : 'Select two mandis on the map to compare.'}
-          </div>
+        {entries.length === 2 && (
+          <>
+            <div className="lg:hidden fixed bottom-3 left-3 right-3 z-[1100]">
+              <div className="max-h-[60vh] overflow-y-auto">
+                <ComparePanel
+                  entries={entries as EntryPair}
+                  language={language}
+                  onClose={() => setSelected([])}
+                />
+              </div>
+            </div>
+            <div className="hidden lg:block lg:col-span-4">
+              <ComparePanel
+                entries={entries as EntryPair}
+                language={language}
+                onClose={() => setSelected([])}
+              />
+            </div>
+          </>
         )}
       </div>
 

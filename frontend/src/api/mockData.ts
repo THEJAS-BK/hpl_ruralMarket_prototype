@@ -53,6 +53,8 @@ export const MANDIS: Mandi[] = [
     transportCostPerQtl: 380,
   },
 ];
+// Placeholder flat rate — swap for your real per-km-per-quintal figure
+export const TRANSPORT_RATE_PER_KM_PER_QTL = 8;
 
 export const REFERENCE_POINT = {
   name: 'Depalpur Farm Gate',
