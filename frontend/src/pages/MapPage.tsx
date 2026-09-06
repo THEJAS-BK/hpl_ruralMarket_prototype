@@ -1,12 +1,13 @@
 import React, { useMemo, useState, useEffect, useCallback } from 'react';
 import { MapContainer, TileLayer, Marker, Tooltip, Polyline } from 'react-leaflet';
-import { MapPin, Search, Loader2, WifiOff } from 'lucide-react';
+import { MapPin, Search, Loader2, WifiOff, TrendingUp } from 'lucide-react';
 import type { Language, Commodity, Market, MarketPrice } from '../api/types';
 import {
   getStates,
   getMarkets,
   getCommodities,
   getLatestPrices,
+  recommend,
   haversineKm,
   transportCostFor,
 } from '../api/client';
@@ -53,6 +54,7 @@ export default function MapPage({ language }: MapPageProps) {
   const [advanceOpen, setAdvanceOpen] = useState(false);
   const [advanceTarget, setAdvanceTarget] = useState<Market | null>(null);
   const [advanceRoute, setAdvanceRoute] = useState<RouteInfo | null>(null);
+  const [bestLoading, setBestLoading] = useState(false);
 
   useEffect(() => {
     let active = true;
@@ -223,6 +225,45 @@ export default function MapPage({ language }: MapPageProps) {
     }
   };
 
+  const openMarket = useCallback(
+    (market: Market) => {
+      setSelected([market.id]);
+      setAdvanceTarget(market);
+      setFlyTo([market.lat, market.lng]);
+      const key = `${originKey}:${market.id}`;
+      setAdvanceRoute(null);
+      getRoute(origin, { lat: market.lat, lng: market.lng })
+        .then((r) => {
+          setAdvanceRoute(r);
+          setRoutes((prev) => (prev[key] ? prev : { ...prev, [key]: r }));
+        })
+        .catch(() => {
+          /* driving route unavailable — drawn only on real route data */
+        });
+    },
+    [origin, originKey],
+  );
+
+  const handleBestSpot = useCallback(() => {
+    setBestLoading(true);
+    recommend(commodityId, origin)
+      .then((res) => {
+        if (res.recommended) {
+          openMarket(res.recommended.market);
+          setToast(
+            language === 'hi'
+              ? `सर्वोत्तम स्थान: ${res.recommended.market.name}`
+              : `Best spot: ${res.recommended.market.name}`,
+          );
+          window.setTimeout(() => setToast(null), 3000);
+        }
+      })
+      .catch(() => {
+        /* backend offline — error overlay already covers it */
+      })
+      .finally(() => setBestLoading(false));
+  }, [commodityId, origin, openMarket, language]);
+
   const handleSelectCommodity = (id: string) => {
     setCommodityId(id);
     setSelected([]);
@@ -230,20 +271,8 @@ export default function MapPage({ language }: MapPageProps) {
     setRouteErrors({});
     setAdvanceTarget(null);
     setAdvanceRoute(null);
+    handleBestSpot();
   };
-
-  const showAdvanceMarket = useCallback(
-    (market: Market) => {
-      setSelected([market.id]);
-      setFlyTo([market.lat, market.lng]);
-      if (!priceMap[market.id]) {
-        getRoute(origin, { lat: market.lat, lng: market.lng })
-          .then((r) => setAdvanceRoute(r))
-          .catch(() => setAdvanceRoute(null));
-      }
-    },
-    [origin, priceMap],
-  );
 
   const originLabel = origin.isLive
     ? language === 'hi'
@@ -263,6 +292,7 @@ export default function MapPage({ language }: MapPageProps) {
     allStates: language === 'hi' ? 'सभी राज्य' : 'All states',
     market: language === 'hi' ? 'मंडी' : 'Market',
     selected: language === 'hi' ? 'चयनित' : 'Selected',
+    bestSpot: language === 'hi' ? 'सर्वोत्तम स्थान' : 'Best spot',
     marketsFound: (n: number) =>
       language === 'hi' ? `${n} बाज़ार` : `${n} markets`,
     offlineTitle: language === 'hi' ? 'बैकेंड ऑफ़लाइन' : 'Backend offline',
@@ -386,6 +416,20 @@ export default function MapPage({ language }: MapPageProps) {
             {t.go}
           </button>
         </form>
+
+        {/* Most profitable spot for the chosen crop */}
+        <button
+          type="button"
+          onClick={handleBestSpot}
+          className="absolute top-[3.5rem] left-3 z-[1000] inline-flex items-center gap-1.5 bg-white/95 backdrop-blur rounded-xl shadow-sm border border-slate-200 px-3 py-2 text-xs font-semibold text-indigo-600 hover:bg-indigo-50 transition-colors cursor-pointer"
+        >
+          {bestLoading ? (
+            <Loader2 className="w-4 h-4 animate-spin" />
+          ) : (
+            <TrendingUp className="w-4 h-4" />
+          )}
+          {t.bestSpot}
+        </button>
 
         {/* Selected count / loading */}
         <div className="absolute top-3 right-3 z-[1000] flex items-center gap-2">
@@ -530,7 +574,7 @@ export default function MapPage({ language }: MapPageProps) {
           commodities={commodities}
           origin={{ lat: origin.lat, lng: origin.lng }}
           onClose={() => setAdvanceOpen(false)}
-          onShowMarket={showAdvanceMarket}
+          onShowMarket={openMarket}
         />
       )}
     </div>

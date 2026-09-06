@@ -186,7 +186,7 @@ router.get('/api/recommend', (req: Request, res: Response) => {
     return err(res, 400, 'origin must be "lat,lng" with valid coordinates');
   }
 
-  const entries = markets.map((m) => buildEntry(commodityId, m, origin));
+  const entries = marketsForCommodity(commodityId).map((m) => buildEntry(commodityId, m, origin));
   entries.sort((a, b) => b.netRevenue - a.netRevenue || a.distanceKm - b.distanceKm);
 
   const recommended = entries[0];
