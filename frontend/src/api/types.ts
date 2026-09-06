@@ -1,31 +1,36 @@
 export type Language = 'en' | 'hi';
 
-export type CropId = 'soybean' | 'wheat' | 'chana' | 'mustard';
-
-export interface Crop {
-  id: CropId;
-  name: string;
-  nameHi: string;
-}
-
-export interface Mandi {
+export interface Commodity {
   id: string;
   name: string;
   nameHi: string;
-  lat: number;
-  lng: number;
-  district: string;
-  districtHi: string;
-  distanceKm: number;
-  transportCostPerQtl: number;
 }
 
-export interface SpotPrice {
-  mandiId: string;
-  price: number;
-  changeRs: number;
-  changePercent: number;
+export interface Market {
+  id: string;
+  name: string;
+  district: string;
+  state: string;
+  lat: number;
+  lng: number;
+}
+
+export interface MarketPrice {
+  market: Market;
+  minPrice: number;
+  maxPrice: number;
+  modalPrice: number;
   trend: 'up' | 'down' | 'flat';
+  changePercent: number;
+}
+
+export interface PriceRow {
+  market: Market;
+  variety: string;
+  grade: string;
+  minPrice: number;
+  maxPrice: number;
+  modalPrice: number;
 }
 
 export interface HistoryPoint {
@@ -33,16 +38,31 @@ export interface HistoryPoint {
   price: number;
 }
 
+export interface HistoryRecord {
+  date: string;
+  minPrice: number;
+  maxPrice: number;
+  modalPrice: number;
+}
+
 export interface CompareEntry {
-  mandi: Mandi;
+  market: Market;
   price: number;
   distanceKm: number;
-  transportCostPerQtl: number;
+  transportCost: number;
   netRevenue: number;
 }
 
 export interface CompareResult {
-  crop: Crop;
+  commodity: Commodity;
+  origin: { lat: number; lng: number };
   entries: [CompareEntry, CompareEntry];
-  betterMandiId: string;
+}
+
+export interface RecommendResult {
+  commodity: Commodity;
+  origin: { lat: number; lng: number };
+  recommended: CompareEntry;
+  runnerUp: CompareEntry;
+  reason: string;
 }

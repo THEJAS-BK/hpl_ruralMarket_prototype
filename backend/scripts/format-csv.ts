@@ -4,40 +4,42 @@ import * as path from 'path';
 /**
  * format-csv.ts
  * -------------
- * Parses the raw Agmarknet "Marketwise Price & Arrival Report" CSV downloaded from
- * data.gov.in (see csv/DATA-SOURCE notes) and emits a clean, typed JSON snapshot at
- * `backend/csv/formated.json`.
+ * Parses the raw Agmarknet "Marketwise Price Report" CSV (single day snapshot)
+ * and emits a clean, typed JSON snapshot at `backend/csv/formated.json`.
  *
- * The report is a national modal-price/arrival report (Rs./Quintal & Metric Tonnes).
- * Generated file shape:
- *   {
- *     reportTitle: string,
- *     reportDate:  string,            // YYYY-MM-DD
- *     commodities: [{
- *       commodityGroup,
- *       commodity,
- *       msp,                          // number | null
- *       priceOnDDMmmYYYY,             // number | null
- *       arrivalOnDDMmmYYYY,           // number | null
- *     }]
- *   }
+ * Expected header (row 1):
+ *   State,District,Market,Commodity,Variety,Grade,Arrival_Date,
+ *   Min_x0020_Price,Max_x0020_Price,Modal_x0020_Price
+ *
+ * Prices are integers in Rs./Quintal. Dates are DD/MM/YYYY and are normalized to
+ * YYYY-MM-DD. Fields may be double-quoted with embedded commas or escaped quotes
+ * (RFC-4180), and some cells carry stray whitespace / trailing newlines — all
+ * string fields are trimmed. Every data row is preserved for full meaning.
  *
  * Usage: `npm run format-csv` (runs via tsx from the backend/ directory).
  */
 
-const CSV_DIR = path.join(__dirname, '..', 'csv');
+const CSV_DIR = path.join(process.cwd(), 'csv');
 const OUT_FILE = path.join(CSV_DIR, 'formated.json');
 
-const MONTHS = [
-  'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
-  'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec',
-];
-
-const pad = (n: number | string): string => String(n).padStart(2, '0');
+/** Exact header -> JSON key mapping for the marketwise report. */
+const HEADER_MAP: Record<string, string> = {
+  State: 'state',
+  District: 'district',
+  Market: 'market',
+  Commodity: 'commodity',
+  Variety: 'variety',
+  Grade: 'grade',
+  Arrival_Date: 'date',
+  Min_x0020_Price: 'minPrice',
+  Max_x0020_Price: 'maxPrice',
+  Modal_x0020_Price: 'modalPrice',
+};
 
 /**
- * Minimal RFC-4180-style CSV parser: handles double-quoted fields (including embedded
- * commas), "" escaped quotes, and \r\n / \n line endings. Returns rows of raw fields.
+ * Minimal RFC-4180-style CSV parser: handles double-quoted fields (including
+ * embedded commas and newlines), "" escaped quotes, and \r\n / \n endings.
+ * Returns rows of raw (untrimmed) fields.
  */
 function parseCsv(text: string): string[][] {
   const rows: string[][] = [];
@@ -81,89 +83,106 @@ function parseCsv(text: string): string[][] {
   return rows;
 }
 
-/** Coerce a CSV cell to number|null. Dash/blank/missing cells become null. */
-function toNumberOrNull(raw: string): number | null {
+/** Normalize "DD/MM/YYYY" -> "YYYY-MM-DD". Throws on anything else. */
+function normalizeDate(raw: string): string {
   const t = raw.trim();
-  if (!t || t === '-') return null;
+  const m = t.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+  if (!m) throw new Error(`Unrecognized Arrival_Date "${raw}" (expected DD/MM/YYYY)`);
+  return `${m[3]}-${m[2]}-${m[1]}`;
+}
+
+/** Coerce a price cell to an integer. Non-numeric cells abort (all rows present). */
+function toPrice(raw: string): number {
+  const t = raw.trim();
   const n = Number(t);
-  return Number.isFinite(n) ? n : null;
+  if (!Number.isFinite(n)) throw new Error(`Non-numeric price cell "${raw}"`);
+  return n;
 }
 
-/** Maps a header label to the JSON key used in formated.json. */
-function keyForHeader(raw: string): string {
-  const t = raw.trim();
-  if (t === 'Commodity Group') return 'commodityGroup';
-  if (t === 'Commodity') return 'commodity';
-  if (/^MSP\b/.test(t)) return 'msp';
-  const m = t.match(/^(Price|Arrival) on (\d{2}) ([A-Za-z]{3}), (\d{4})$/);
-  if (m) {
-    const monthNum = MONTHS.indexOf(m[3]) + 1;
-    if (monthNum > 0) {
-      // Key format must match the schema consumed downstream: priceOnDDMmmYYYY,
-      // e.g. "Price on 03 Sep, 2026" -> priceOn03Sep2026.
-      return `${m[1] === 'Price' ? 'price' : 'arrival'}On${pad(m[2])}${m[3]}${m[4]}`;
-    }
-  }
-  // Fallback: camelCase the header so we never silently drop a column.
-  return t
-    .replace(/[^A-Za-z0-9]+/g, ' ')
-    .trim()
-    .split(' ')
-    .map((w, idx) => (idx === 0 ? w.toLowerCase() : w[0].toUpperCase() + w.slice(1).toLowerCase()))
-    .join('');
+interface Row {
+  state: string;
+  district: string;
+  market: string;
+  commodity: string;
+  variety: string;
+  grade: string;
+  date: string;
+  minPrice: number;
+  maxPrice: number;
+  modalPrice: number;
 }
 
-/** Matches the report title row, e.g. "Marketwise Price & Arrival Report (03-09-2026)". */
-function parseTitleRow(fields: string[]): { reportTitle: string; reportDate: string } {
-  const joined = fields.filter(Boolean).join(' ');
-  const m = joined.match(/([^(]+?)\((\d{2})-(\d{2})-(\d{4})\)/);
-  if (!m) {
-    throw new Error(`Could not parse report title/date from CSV row: "${joined}"`);
-  }
-  return {
-    reportTitle: m[1].trim(),
-    reportDate: `${m[4]}-${m[3]}-${m[2]}`,
-  };
-}
+const cmpStr = (a: string, b: string): number => (a < b ? -1 : a > b ? 1 : 0);
 
 function main(): void {
-  const files = fs.readdirSync(CSV_DIR).filter((f) => /^Market_Wise_Price_Arrival_.+\.csv$/i.test(f));
+  const files = fs.readdirSync(CSV_DIR).filter((f) => /\.csv$/i.test(f)).sort();
   if (files.length === 0) {
-    throw new Error(`No "Market_Wise_Price_Arrival_*.csv" found in ${CSV_DIR}`);
+    throw new Error(`No CSV files found in ${CSV_DIR}`);
   }
-  const csvFile = path.join(CSV_DIR, files[0]);
-  const rows = parseCsv(fs.readFileSync(csvFile, 'utf8'))
-    .filter((r) => r.some((c) => c.trim() !== ''));
+  if (files.length > 1) {
+    console.log(`Found ${files.length} CSVs; using the first: ${files[0]}`);
+  }
+  const csvFile = files[0];
 
-  if (rows.length < 4) {
-    throw new Error(`CSV ${files[0]} has no data rows (got ${rows.length} rows)`);
+  const parsed = parseCsv(fs.readFileSync(path.join(CSV_DIR, csvFile), 'utf8'));
+  if (parsed.length < 2) {
+    throw new Error(`CSV ${csvFile} has no data rows (got ${parsed.length} rows)`);
   }
 
-  const { reportTitle, reportDate } = parseTitleRow(rows[0]);
-  const headers = rows[2];
+  // Header row 1. Map each column index to a JSON key; reject unknown columns.
+  const headers = parsed[0].map((h) => h.trim());
+  const colKeys: (keyof Row | undefined)[] = headers.map((h) => HEADER_MAP[h] as keyof Row | undefined);
+  for (let i = 0; i < headers.length; i++) {
+    if (!colKeys[i]) throw new Error(`Unmapped CSV header "${headers[i]}" (column ${i + 1})`);
+  }
 
-  const colKeys = headers.map((h) => keyForHeader(h));
-
-  const commodities = rows.slice(3).map((cells) => {
-    const record: Record<string, unknown> = {};
-    cells.forEach((cell, i) => {
-      const key = colKeys[i];
-      if (!key) return;
-      if (key === 'commodityGroup' || key === 'commodity') {
-        record[key] = cell.trim();
-      } else {
-        record[key] = toNumberOrNull(cell);
-      }
-    });
-    return record;
+  const rows: Row[] = parsed.slice(1).map((cells) => {
+    const rec: Partial<Record<keyof Row, unknown>> = {};
+    for (let i = 0; i < cells.length && i < colKeys.length; i++) {
+      const key = colKeys[i]!;
+      const cell = cells[i];
+      rec[key] =
+        key === 'date'
+          ? normalizeDate(cell)
+          : key === 'minPrice' || key === 'maxPrice' || key === 'modalPrice'
+            ? toPrice(cell)
+            : cell.trim();
+    }
+    return rec as unknown as Row;
   });
 
-  const output = { reportTitle, reportDate, commodities };
+  rows.sort(
+    (a, b) =>
+      cmpStr(a.state, b.state) ||
+      cmpStr(a.district, b.district) ||
+      cmpStr(a.market, b.market) ||
+      cmpStr(a.commodity, b.commodity) ||
+      cmpStr(a.variety, b.variety) ||
+      cmpStr(a.grade, b.grade)
+  );
+
+  const dates = new Set(rows.map((r) => r.date));
+  if (dates.size !== 1) {
+    throw new Error(`Expected a single Arrival_Date but found: ${[...dates].join(', ')}`);
+  }
+
+  const commodities = new Set(rows.map((r) => r.commodity));
+  const markets = new Set(rows.map((r) => `${r.state}|${r.district}|${r.market}`));
+
+  const output = {
+    source: csvFile,
+    date: [...dates][0],
+    recordCount: rows.length,
+    commodityCount: commodities.size,
+    marketCount: markets.size,
+    rows,
+  };
+
   fs.writeFileSync(OUT_FILE, JSON.stringify(output, null, 2) + '\n', 'utf8');
 
-  console.log('formatted', path.basename(csvFile), `-> ${OUT_FILE}`);
-  console.log(`report: ${reportTitle} (${reportDate}), ${commodities.length} commodities`);
-  console.log(`columns: ${colKeys.join(', ')}`);
+  console.log(`formatted ${csvFile} -> ${OUT_FILE}`);
+  console.log(`  date: ${output.date}, rows: ${output.recordCount}`);
+  console.log(`  commodities: ${output.commodityCount}, markets: ${output.marketCount}`);
 }
 
 main();

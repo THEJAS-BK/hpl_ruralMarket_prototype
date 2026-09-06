@@ -4,16 +4,16 @@ import Row from './Row';
 import type { CostCardProps } from './types';
 
 export default function MandiCostCard({ entry, language, onClose }: CostCardProps) {
-  const name = language === 'hi' ? entry.mandi.nameHi : entry.mandi.name;
-  const district =
-    language === 'hi' ? entry.mandi.districtHi : entry.mandi.district;
+  const name = entry.market.name;
+  const district = entry.market.district;
+  const state = entry.market.state;
   const t = {
-    spotPrice: language === 'hi' ? 'स्पॉट भाव' : 'Spot Price',
+    modalPrice: language === 'hi' ? 'मॉडल भाव' : 'Modal Price',
     distance: language === 'hi' ? 'दूरी' : 'Distance',
     travelTime: language === 'hi' ? 'यात्रा समय' : 'Travel time',
     transport: language === 'hi' ? 'परिवहन लागत' : 'Transport Cost',
     netRevenue: language === 'hi' ? 'शुद्ध आय' : 'Net Revenue',
-    perQtl: '/Quintal',
+    perKg: '/kg',
     calculating: language === 'hi' ? 'गणना हो रही है…' : 'Calculating…',
   };
 
@@ -21,7 +21,7 @@ export default function MandiCostCard({ entry, language, onClose }: CostCardProp
     <div className="bg-white border border-slate-200 rounded-2xl shadow-lg overflow-hidden">
       <div className="flex items-center justify-between px-4 py-3 border-b border-slate-100">
         <span className="text-xs font-bold text-slate-900 uppercase tracking-wider">
-          {language === 'hi' ? 'मंडी लागत' : 'Mandi Cost'}
+          {language === 'hi' ? 'बाज़ार लागत' : 'Market Cost'}
         </span>
         <button
           onClick={onClose}
@@ -37,12 +37,14 @@ export default function MandiCostCard({ entry, language, onClose }: CostCardProp
           <Store className="w-3.5 h-3.5 text-indigo-500" />
           <div className="min-w-0">
             <p className="text-sm font-bold text-slate-900 truncate">{name}</p>
-            <p className="text-[11px] text-slate-500 truncate">{district}</p>
+            <p className="text-[11px] text-slate-500 truncate">
+              {district} · {state}
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-1 text-xs mt-1">
           <Row
-            label={t.spotPrice}
+            label={t.modalPrice}
             value={`₹${entry.price.toLocaleString('en-IN')}`}
             accent
           />
@@ -57,13 +59,13 @@ export default function MandiCostCard({ entry, language, onClose }: CostCardProp
           />
           <Row
             label={t.transport}
-            value={`-₹${entry.transportCostPerQtl.toLocaleString('en-IN')}`}
+            value={`-₹${entry.transportCost.toLocaleString('en-IN')}`}
             negative
           />
         </div>
         <div className="mt-2 pt-2 border-t border-slate-100">
           <span className="text-[10px] text-slate-400 uppercase font-semibold block">
-            {t.netRevenue} ({t.perQtl})
+            {t.netRevenue} ({t.perKg})
           </span>
           <span className="text-lg font-bold text-slate-700">
             ₹{entry.netRevenue.toLocaleString('en-IN')}

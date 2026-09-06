@@ -1,0 +1,482 @@
+[
+  {
+    "id": "amaranthus",
+    "name": "Amaranthus",
+    "nameHi": "चौलाई"
+  },
+  {
+    "id": "amla-nelli-kai",
+    "name": "Amla(Nelli Kai)",
+    "nameHi": "आँवला"
+  },
+  {
+    "id": "apple",
+    "name": "Apple",
+    "nameHi": "सेब"
+  },
+  {
+    "id": "ashgourd",
+    "name": "Ashgourd",
+    "nameHi": "पेठा"
+  },
+  {
+    "id": "baby-corn",
+    "name": "Baby Corn",
+    "nameHi": "बेबी कॉर्न"
+  },
+  {
+    "id": "bajra-pearl-millet-cumbu",
+    "name": "Bajra(Pearl Millet/Cumbu)",
+    "nameHi": "बाजरा"
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "nameHi": "केला"
+  },
+  {
+    "id": "banana-green",
+    "name": "Banana - Green",
+    "nameHi": "हरा केला"
+  },
+  {
+    "id": "beans",
+    "name": "Beans",
+    "nameHi": "बीन्स"
+  },
+  {
+    "id": "beetroot",
+    "name": "Beetroot",
+    "nameHi": "चुकंदर"
+  },
+  {
+    "id": "bengal-gram-gram-whole",
+    "name": "Bengal Gram(Gram)(Whole)",
+    "nameHi": "चना"
+  },
+  {
+    "id": "betal-leaves",
+    "name": "Betal Leaves",
+    "nameHi": "पान"
+  },
+  {
+    "id": "bhindi-ladies-finger",
+    "name": "Bhindi(Ladies Finger)",
+    "nameHi": "भिंडी"
+  },
+  {
+    "id": "bitter-gourd",
+    "name": "Bitter gourd",
+    "nameHi": "करेला"
+  },
+  {
+    "id": "bottle-gourd",
+    "name": "Bottle gourd",
+    "nameHi": "लौकी"
+  },
+  {
+    "id": "brinjal",
+    "name": "Brinjal",
+    "nameHi": "बैंगन"
+  },
+  {
+    "id": "cabbage",
+    "name": "Cabbage",
+    "nameHi": "पत्ता गोभी"
+  },
+  {
+    "id": "capsicum",
+    "name": "Capsicum",
+    "nameHi": "शिमला मिर्च"
+  },
+  {
+    "id": "carrot",
+    "name": "Carrot",
+    "nameHi": "गाजर"
+  },
+  {
+    "id": "cashewnuts",
+    "name": "Cashewnuts",
+    "nameHi": "काजू"
+  },
+  {
+    "id": "cauliflower",
+    "name": "Cauliflower",
+    "nameHi": "फूल गोभी"
+  },
+  {
+    "id": "chikoos-sapota",
+    "name": "Chikoos(Sapota)",
+    "nameHi": "चीकू"
+  },
+  {
+    "id": "chili-red",
+    "name": "Chili Red",
+    "nameHi": "लाल मिर्च"
+  },
+  {
+    "id": "chow-chow",
+    "name": "Chow Chow",
+    "nameHi": "चौचौ"
+  },
+  {
+    "id": "cluster-beans",
+    "name": "Cluster beans",
+    "nameHi": "गवार फली"
+  },
+  {
+    "id": "coconut",
+    "name": "Coconut",
+    "nameHi": "नारियल"
+  },
+  {
+    "id": "colacasia",
+    "name": "Colacasia",
+    "nameHi": "अरबी"
+  },
+  {
+    "id": "coriander-leaves",
+    "name": "Coriander(Leaves)",
+    "nameHi": "धनिया पत्ती"
+  },
+  {
+    "id": "cotton",
+    "name": "Cotton",
+    "nameHi": "कपास"
+  },
+  {
+    "id": "cowpea-veg",
+    "name": "Cowpea(Veg)",
+    "nameHi": "लोबिया"
+  },
+  {
+    "id": "cucumbar-kheera",
+    "name": "Cucumbar(Kheera)",
+    "nameHi": "खीरा"
+  },
+  {
+    "id": "custard-apple-sharifa",
+    "name": "Custard Apple(Sharifa)",
+    "nameHi": "शरीफा"
+  },
+  {
+    "id": "drumstick",
+    "name": "Drumstick",
+    "nameHi": "सहजन"
+  },
+  {
+    "id": "elephant-yam-suran-amorphophallus",
+    "name": "Elephant Yam(Suran)/Amorphophallus",
+    "nameHi": "सूरन"
+  },
+  {
+    "id": "fig-anjura-anjeer",
+    "name": "Fig(Anjura/Anjeer)",
+    "nameHi": "अंजीर"
+  },
+  {
+    "id": "fish",
+    "name": "Fish",
+    "nameHi": "मछली"
+  },
+  {
+    "id": "garlic",
+    "name": "Garlic",
+    "nameHi": "लहसुन"
+  },
+  {
+    "id": "ginger-green",
+    "name": "Ginger(Green)",
+    "nameHi": "अदरक"
+  },
+  {
+    "id": "grapes",
+    "name": "Grapes",
+    "nameHi": "अंगूर"
+  },
+  {
+    "id": "green-avare-w",
+    "name": "Green Avare(W)",
+    "nameHi": "हरी अवरे बीन"
+  },
+  {
+    "id": "green-chilli",
+    "name": "Green Chilli",
+    "nameHi": "हरी मिर्च"
+  },
+  {
+    "id": "green-peas",
+    "name": "Green Peas",
+    "nameHi": "हरी मटर"
+  },
+  {
+    "id": "groundnut",
+    "name": "Groundnut",
+    "nameHi": "मूंगफली"
+  },
+  {
+    "id": "guava",
+    "name": "Guava",
+    "nameHi": "अमरूद"
+  },
+  {
+    "id": "gur-jaggery",
+    "name": "Gur(Jaggery)",
+    "nameHi": "गुड़"
+  },
+  {
+    "id": "indian-beans-seam",
+    "name": "Indian Beans(Seam)",
+    "nameHi": "सेम"
+  },
+  {
+    "id": "jack-fruit-ripe",
+    "name": "Jack Fruit(Ripe)",
+    "nameHi": "पका कटहल"
+  },
+  {
+    "id": "jasmine",
+    "name": "Jasmine",
+    "nameHi": "चमेली"
+  },
+  {
+    "id": "jowar-sorghum",
+    "name": "Jowar(Sorghum)",
+    "nameHi": "ज्वार"
+  },
+  {
+    "id": "kakada",
+    "name": "Kakada",
+    "nameHi": "काकड़ा"
+  },
+  {
+    "id": "karbuja-musk-melon",
+    "name": "Karbuja(Musk Melon)",
+    "nameHi": "खरबूजा"
+  },
+  {
+    "id": "knool-khol",
+    "name": "Knool Khol",
+    "nameHi": "गांठ गोभी"
+  },
+  {
+    "id": "ladies-finger",
+    "name": "Ladies Finger",
+    "nameHi": "भिंडी"
+  },
+  {
+    "id": "lemon",
+    "name": "Lemon",
+    "nameHi": "नींबू"
+  },
+  {
+    "id": "lime",
+    "name": "Lime",
+    "nameHi": "नींबू (लाइम)"
+  },
+  {
+    "id": "maize",
+    "name": "Maize",
+    "nameHi": "मक्का"
+  },
+  {
+    "id": "mango",
+    "name": "Mango",
+    "nameHi": "आम"
+  },
+  {
+    "id": "mango-raw-ripe",
+    "name": "Mango(Raw-Ripe)",
+    "nameHi": "अधपका आम"
+  },
+  {
+    "id": "marigold-calcutta",
+    "name": "Marigold(Calcutta)",
+    "nameHi": "गेंदा फूल"
+  },
+  {
+    "id": "mashrooms",
+    "name": "Mashrooms",
+    "nameHi": "मशरूम"
+  },
+  {
+    "id": "mint-pudina",
+    "name": "Mint(Pudina)",
+    "nameHi": "पुदीना"
+  },
+  {
+    "id": "mousambi-sweet-lime",
+    "name": "Mousambi(Sweet Lime)",
+    "nameHi": "मौसंबी"
+  },
+  {
+    "id": "onion",
+    "name": "Onion",
+    "nameHi": "प्याज"
+  },
+  {
+    "id": "onion-green",
+    "name": "Onion Green",
+    "nameHi": "हरा प्याज"
+  },
+  {
+    "id": "orange",
+    "name": "Orange",
+    "nameHi": "संतरा"
+  },
+  {
+    "id": "paddy-common",
+    "name": "Paddy(Common)",
+    "nameHi": "कच्चा धान"
+  },
+  {
+    "id": "papaya",
+    "name": "Papaya",
+    "nameHi": "पपीता"
+  },
+  {
+    "id": "pear-marasebu",
+    "name": "Pear(Marasebu)",
+    "nameHi": "नाशपाती"
+  },
+  {
+    "id": "pineapple",
+    "name": "Pineapple",
+    "nameHi": "अनानास"
+  },
+  {
+    "id": "pointed-gourd-parval",
+    "name": "Pointed gourd(Parval)",
+    "nameHi": "परवल"
+  },
+  {
+    "id": "pomegranate",
+    "name": "Pomegranate",
+    "nameHi": "अनार"
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "nameHi": "आलू"
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "nameHi": "कद्दू"
+  },
+  {
+    "id": "raddish",
+    "name": "Raddish",
+    "nameHi": "मूली"
+  },
+  {
+    "id": "ragi-finger-millet",
+    "name": "Ragi(Finger Millet)",
+    "nameHi": "रागी"
+  },
+  {
+    "id": "red-gram-arhar-tur-whole",
+    "name": "Red gram/Arhar/Tur(whole)",
+    "nameHi": "अरहर"
+  },
+  {
+    "id": "rice",
+    "name": "Rice",
+    "nameHi": "चावल"
+  },
+  {
+    "id": "ridgeguard-tori",
+    "name": "Ridgeguard(Tori)",
+    "nameHi": "तुरई"
+  },
+  {
+    "id": "rose-local",
+    "name": "Rose(Local)",
+    "nameHi": "गुलाब"
+  },
+  {
+    "id": "seetapal",
+    "name": "Seetapal",
+    "nameHi": "सीताफल"
+  },
+  {
+    "id": "snakeguard",
+    "name": "Snakeguard",
+    "nameHi": "चिचिंडा"
+  },
+  {
+    "id": "soyabean",
+    "name": "Soyabean",
+    "nameHi": "सोयाबीन"
+  },
+  {
+    "id": "spiny-gourd-kartali-kantola",
+    "name": "Spiny Gourd / Kartali(Kantola)",
+    "nameHi": "कंटोला"
+  },
+  {
+    "id": "sponge-gourd",
+    "name": "Sponge gourd",
+    "nameHi": "नरम तुरई"
+  },
+  {
+    "id": "sweet-corn",
+    "name": "Sweet Corn",
+    "nameHi": "मीठा मक्का"
+  },
+  {
+    "id": "sweet-potato",
+    "name": "Sweet Potato",
+    "nameHi": "शकरकंद"
+  },
+  {
+    "id": "tamarind-fruit",
+    "name": "Tamarind Fruit",
+    "nameHi": "इमली"
+  },
+  {
+    "id": "tapioca",
+    "name": "Tapioca",
+    "nameHi": "कसावा"
+  },
+  {
+    "id": "tender-coconut",
+    "name": "Tender Coconut",
+    "nameHi": "कोमल नारियल"
+  },
+  {
+    "id": "thondekai",
+    "name": "Thondekai",
+    "nameHi": "तोंडली"
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "nameHi": "टमाटर"
+  },
+  {
+    "id": "tube-flower",
+    "name": "Tube Flower",
+    "nameHi": "ट्यूब फूल"
+  },
+  {
+    "id": "tube-rose-loose",
+    "name": "Tube Rose(Loose)",
+    "nameHi": "रजनीगंधा"
+  },
+  {
+    "id": "turnip",
+    "name": "Turnip",
+    "nameHi": "शलगम"
+  },
+  {
+    "id": "water-melon",
+    "name": "Water Melon",
+    "nameHi": "तरबूज"
+  },
+  {
+    "id": "yam-ratalu",
+    "name": "Yam(Ratalu)",
+    "nameHi": "रतालू"
+  }
+]

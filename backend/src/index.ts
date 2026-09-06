@@ -1,8 +1,8 @@
 import express from 'express';
 import cors from 'cors';
 import router from './routes';
-import { PORT, CROPS } from './config';
-import { mandis, prices } from './store';
+import { PORT } from './config';
+import { markets, commodities, prices, historyPoints, states, DATASET_CENTRE } from './store';
 
 const app = express();
 
@@ -26,15 +26,19 @@ app.use((err: Error, _req: express.Request, res: express.Response, _next: expres
 
 app.listen(PORT, () => {
   console.log(`Gram Market backend running on port ${PORT}`);
-  console.log(`  Data: ${mandis.length} mandis, ${prices.length} price records`);
-  console.log(`  Crops: ${CROPS.join(', ')}`);
+  console.log(`  Data: ${markets.length} markets, ${commodities.length} commodities, ${prices.length} price rows, ${historyPoints.length} history points`);
+  console.log(`  Dataset centre: lat=${DATASET_CENTRE.lat}, lng=${DATASET_CENTRE.lng}`);
+  console.log(`  States: ${states.join(', ')}`);
   console.log(`  Endpoints:`);
   console.log(`    GET /health`);
-  console.log(`    GET /api/mandis`);
-  console.log(`    GET /api/prices?crop=X`);
-  console.log(`    GET /api/prices/history?crop=X&mandi=Y&days=N`);
-  console.log(`    GET /api/compare?crop=X&mandiA=Y&mandiB=Z`);
-  console.log(`    GET /api/recommend?crop=X`);
+  console.log(`    GET /api/states`);
+  console.log(`    GET /api/markets?state=X`);
+  console.log(`    GET /api/commodities`);
+  console.log(`    GET /api/prices?commodity=X&market=Y&state=Z`);
+  console.log(`    GET /api/prices/latest?commodity=X`);
+  console.log(`    GET /api/prices/history?commodity=X&market=Y&days=N`);
+  console.log(`    GET /api/compare?commodity=X&marketA=Y&marketB=Z&origin=lat,lng`);
+  console.log(`    GET /api/recommend?commodity=X&origin=lat,lng`);
 });
 
 export { app };

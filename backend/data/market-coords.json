@@ -1,0 +1,982 @@
+{
+  "Andhra Pradesh|Anakapally|Yellamanchili APMC": {
+    "lat": 17.631,
+    "lng": 83.004,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Annamayya|Piler APMC": {
+    "lat": 14.055,
+    "lng": 78.75,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Dr.B.R.A.Konaseema|Mummidivaram APMC": {
+    "lat": 16.578,
+    "lng": 81.933,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Eluru|Kaikaluru APMC": {
+    "lat": 16.706,
+    "lng": 81.098,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Jaggampet APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Kakinada (Urban) APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Karapa APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Peddapuram APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Pithapuram APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Samalkot APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Sampara (Kakinada Rural) APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kakinada|Tuni APMC": {
+    "lat": 16.989,
+    "lng": 82.247,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Kurnool|Pattikonda APMC": {
+    "lat": 15.828,
+    "lng": 78.037,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Markapuram|Kanigiri APMC": {
+    "lat": 15.738,
+    "lng": 79.275,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Markapuram|Markapur APMC": {
+    "lat": 15.738,
+    "lng": 79.275,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Markapuram|Podili APMC": {
+    "lat": 15.738,
+    "lng": 79.275,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Markapuram|Yerragondapalem APMC": {
+    "lat": 15.738,
+    "lng": 79.275,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Nandyal|Atmakur (Nandyal District) APMC": {
+    "lat": 15.478,
+    "lng": 78.483,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Nandyal|Koilkunta APMC": {
+    "lat": 15.478,
+    "lng": 78.483,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Prakasam|Darsi APMC": {
+    "lat": 15.506,
+    "lng": 80.049,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Prakasam|Kondapi APMC": {
+    "lat": 15.506,
+    "lng": 80.049,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Prakasam|Maddipadu APMC": {
+    "lat": 15.506,
+    "lng": 80.049,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Prakasam|Santhamaguluru APMC": {
+    "lat": 15.506,
+    "lng": 80.049,
+    "tier": "district"
+  },
+  "Andhra Pradesh|SPSR Nellore|Atmakur (SPSR Nellore District) APMC": {
+    "lat": 14.443,
+    "lng": 79.987,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Srikakulam|Ichapuram APMC": {
+    "lat": 18.299,
+    "lng": 83.897,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Srikakulam|Kothabommali APMC": {
+    "lat": 18.299,
+    "lng": 83.897,
+    "tier": "district"
+  },
+  "Andhra Pradesh|Visakhapatnam|Bhimunipatnam APMC": {
+    "lat": 17.889,
+    "lng": 83.448,
+    "tier": "district"
+  },
+  "Haryana|Palwal|Hodal APMC": {
+    "lat": 28.143,
+    "lng": 77.329,
+    "tier": "district"
+  },
+  "Himachal Pradesh|Solan|SMY Parwanoo": {
+    "lat": 30.909,
+    "lng": 77.097,
+    "tier": "district"
+  },
+  "Keralam|Kollam|Chengamanad  VFPCK Market": {
+    "lat": 8.893,
+    "lng": 76.614,
+    "tier": "district"
+  },
+  "Keralam|Kollam|Plappally VFPCK Market": {
+    "lat": 8.893,
+    "lng": 76.614,
+    "tier": "district"
+  },
+  "Keralam|Kollam|Thalavoor VFPCK Market": {
+    "lat": 8.893,
+    "lng": 76.614,
+    "tier": "district"
+  },
+  "Keralam|Kozhikode(Calicut)|Kakkur VFPCK Market": {
+    "lat": 11.258,
+    "lng": 75.78,
+    "tier": "district"
+  },
+  "Keralam|Kozhikode(Calicut)|Kunnamangalam  VFPCK Market": {
+    "lat": 11.258,
+    "lng": 75.78,
+    "tier": "district"
+  },
+  "Keralam|Kozhikode(Calicut)|Mukkom Market": {
+    "lat": 11.258,
+    "lng": 75.78,
+    "tier": "district"
+  },
+  "Keralam|Kozhikode(Calicut)|Thalakulathur VFPCK Market": {
+    "lat": 11.258,
+    "lng": 75.78,
+    "tier": "district"
+  },
+  "Keralam|Kozhikode(Calicut)|Thiruvambady VFPCK Market": {
+    "lat": 11.258,
+    "lng": 75.78,
+    "tier": "district"
+  },
+  "Keralam|Palakad|Vaniyamkulam  VFPCK Market": {
+    "lat": 10.787,
+    "lng": 76.654,
+    "tier": "district"
+  },
+  "Keralam|Thiruvananthapuram|Parassala Market": {
+    "lat": 8.524,
+    "lng": 76.937,
+    "tier": "district"
+  },
+  "Maharashtra|Palghar|APMC Palghar": {
+    "lat": 19.697,
+    "lng": 72.765,
+    "tier": "district"
+  },
+  "Odisha|Dhenkanal|Hindol APMC": {
+    "lat": 20.661,
+    "lng": 85.597,
+    "tier": "district"
+  },
+  "Odisha|Kalahandi|Bhawanipatna APMC": {
+    "lat": 19.907,
+    "lng": 83.167,
+    "tier": "district"
+  },
+  "Odisha|Mayurbhanja|Narasinghpur APMC": {
+    "lat": 21.934,
+    "lng": 86.732,
+    "tier": "district"
+  },
+  "Odisha|Rayagada|Gunpur APMC": {
+    "lat": 19.168,
+    "lng": 83.416,
+    "tier": "district"
+  },
+  "Odisha|Rayagada|Rayagada(Muniguda) APMC": {
+    "lat": 19.168,
+    "lng": 83.416,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ariyalur|Jeyankondam (Uzhavar Sandhai )": {
+    "lat": 11.138,
+    "lng": 79.075,
+    "tier": "district"
+  },
+  "Tamil Nadu|Chengalpattu|Guduvancheri(Uzhavar Sandhai )": {
+    "lat": 12.685,
+    "lng": 79.972,
+    "tier": "district"
+  },
+  "Tamil Nadu|Chengalpattu|Jameenrayapettai(Uzhavar Sandhai )": {
+    "lat": 12.685,
+    "lng": 79.972,
+    "tier": "district"
+  },
+  "Tamil Nadu|Chengalpattu|Pallavaram(Uzhavar Sandhai )": {
+    "lat": 12.685,
+    "lng": 79.972,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Kurichi(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Mettupalayam(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Pollachi(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|RSPuram(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Singanallur(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Sulur(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Sundarapuram(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Udumalpet APMC": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Coimbatore|Vadavalli(Uzhavar Sandhai )": {
+    "lat": 11.017,
+    "lng": 76.956,
+    "tier": "district"
+  },
+  "Tamil Nadu|Cuddalore|Chidambaram(Uzhavar Sandhai )": {
+    "lat": 11.744,
+    "lng": 79.768,
+    "tier": "district"
+  },
+  "Tamil Nadu|Cuddalore|Cuddalore(Uzhavar Sandhai )": {
+    "lat": 11.744,
+    "lng": 79.768,
+    "tier": "district"
+  },
+  "Tamil Nadu|Cuddalore|Vadalur(Uzhavar Sandhai )": {
+    "lat": 11.744,
+    "lng": 79.768,
+    "tier": "district"
+  },
+  "Tamil Nadu|Cuddalore|Viruthachalam(Uzhavar Sandhai )": {
+    "lat": 11.744,
+    "lng": 79.768,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dharmapuri|Dharmapuri(Uzhavar Sandhai )": {
+    "lat": 12.124,
+    "lng": 78.161,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dharmapuri|Harur(Uzhavar Sandhai )": {
+    "lat": 12.124,
+    "lng": 78.161,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dharmapuri|Karimangalam(Uzhavar Sandhai)": {
+    "lat": 12.124,
+    "lng": 78.161,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dharmapuri|Palacode(Uzhavar Sandhai )": {
+    "lat": 12.124,
+    "lng": 78.161,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dharmapuri|Pennagaram(Uzhavar Sandhai )": {
+    "lat": 12.124,
+    "lng": 78.161,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dindigul|Chinnalapatti(Uzhavar Sandhai )": {
+    "lat": 10.363,
+    "lng": 77.979,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dindigul|Dindigul(Uzhavar Sandhai )": {
+    "lat": 10.363,
+    "lng": 77.979,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dindigul|Palani(Uzhavar Sandhai )": {
+    "lat": 10.363,
+    "lng": 77.979,
+    "tier": "district"
+  },
+  "Tamil Nadu|Dindigul|Vedasanthur(Uzhavar Sandhai )": {
+    "lat": 10.363,
+    "lng": 77.979,
+    "tier": "district"
+  },
+  "Tamil Nadu|Erode|Gobichettipalayam(Uzhavar Sandhai )": {
+    "lat": 11.342,
+    "lng": 77.717,
+    "tier": "district"
+  },
+  "Tamil Nadu|Erode|Sampath Nagar(Uzhavar Sandhai )": {
+    "lat": 11.342,
+    "lng": 77.717,
+    "tier": "district"
+  },
+  "Tamil Nadu|Erode|Sathiyamagalam(Uzhavar Sandhai )": {
+    "lat": 11.342,
+    "lng": 77.717,
+    "tier": "district"
+  },
+  "Tamil Nadu|Erode|Thalavadi(Uzhavar Sandhai )": {
+    "lat": 11.342,
+    "lng": 77.717,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kallakuruchi|Kallakurichi(Uzhavar Sandhai )": {
+    "lat": 11.737,
+    "lng": 79.076,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kallakuruchi|Sankarapuram(Uzhavar Sandhai )": {
+    "lat": 11.737,
+    "lng": 79.076,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kancheepuram|Kancheepuram(Uzhavar Sandhai )": {
+    "lat": 12.835,
+    "lng": 79.703,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kancheepuram|Kundrathur(Uzhavar Sandhai )": {
+    "lat": 12.835,
+    "lng": 79.703,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kancheepuram|Padappai(Uzhavar Sandhai )": {
+    "lat": 12.835,
+    "lng": 79.703,
+    "tier": "district"
+  },
+  "Tamil Nadu|Kancheepuram|Sunguvarchatram(Uzhavar Sandhai )": {
+    "lat": 12.835,
+    "lng": 79.703,
+    "tier": "district"
+  },
+  "Tamil Nadu|Karur|Gandhigramam(Uzhavar Sandhai)": {
+    "lat": 10.961,
+    "lng": 78.077,
+    "tier": "district"
+  },
+  "Tamil Nadu|Karur|Kulithalai(Uzhavar Sandhai )": {
+    "lat": 10.961,
+    "lng": 78.077,
+    "tier": "district"
+  },
+  "Tamil Nadu|Karur|Pallapatti (Uzhavar Sandhai )": {
+    "lat": 10.961,
+    "lng": 78.077,
+    "tier": "district"
+  },
+  "Tamil Nadu|Karur|Velayuthampalayam(Uzhavar Sandhai )": {
+    "lat": 10.961,
+    "lng": 78.077,
+    "tier": "district"
+  },
+  "Tamil Nadu|Krishnagiri|Avallapalli(Uzhavar Sandhai )": {
+    "lat": 12.519,
+    "lng": 78.217,
+    "tier": "district"
+  },
+  "Tamil Nadu|Krishnagiri|Denkanikottai(Uzhavar Sandhai )": {
+    "lat": 12.519,
+    "lng": 78.217,
+    "tier": "district"
+  },
+  "Tamil Nadu|Krishnagiri|Hosur(Uzhavar Sandhai )": {
+    "lat": 12.519,
+    "lng": 78.217,
+    "tier": "district"
+  },
+  "Tamil Nadu|Krishnagiri|Kaveripattinam(Uzhavar Sandhai )": {
+    "lat": 12.519,
+    "lng": 78.217,
+    "tier": "district"
+  },
+  "Tamil Nadu|Krishnagiri|Krishnagiri(Uzhavar Sandhai )": {
+    "lat": 12.519,
+    "lng": 78.217,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Anaiyur(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Anna nagar(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Chokkikulam(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Melur(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Palanganatham(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Thirumangalam(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Madurai|Usilampatti(Uzhavar Sandhai )": {
+    "lat": 9.925,
+    "lng": 78.12,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagapattinam|Mayiladuthurai(Uzhavar Sandhai )": {
+    "lat": 10.768,
+    "lng": 79.838,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagapattinam|Nagapattinam(Uzhavar Sandhai )": {
+    "lat": 10.768,
+    "lng": 79.838,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagapattinam|Sirkali(Uzhavar Sandhai )": {
+    "lat": 10.768,
+    "lng": 79.838,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagapattinam|Vedaranyam(Uzhavar Sandhai)": {
+    "lat": 10.768,
+    "lng": 79.838,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagercoil (Kannyiakumari)|Myladi(Uzhavar Sandhai )": {
+    "lat": 8.184,
+    "lng": 77.412,
+    "tier": "district"
+  },
+  "Tamil Nadu|Nagercoil (Kannyiakumari)|Vadaseri APMC": {
+    "lat": 8.184,
+    "lng": 77.412,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Kumarapalayam(Uzhavar Sandhai )": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Mohanur(Uzhavar Sandhai )": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Namakkal(Uzhavar Sandhai )": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Paramathivelur(Uzhavar Sandhai )": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Rasipuram(Uzhavar Sandhai )": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Namakkal|Tiruchengode APMC": {
+    "lat": 11.219,
+    "lng": 78.167,
+    "tier": "district"
+  },
+  "Tamil Nadu|Perambalur|Perambalur(Uzhavar Sandhai )": {
+    "lat": 11.234,
+    "lng": 78.873,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Alangudi(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Aranthangi(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Gandarvakottai(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Karambakkudi(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Ponnamaravathi(Uzhavar Sandhai)": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Pudukottai(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Pudukkottai|Viralimalai(Uzhavar Sandhai )": {
+    "lat": 10.38,
+    "lng": 78.818,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ramanathapuram|Kamuthi(Uzhavar Sandhai )": {
+    "lat": 9.369,
+    "lng": 78.83,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ramanathapuram|Paramakudi(Uzhavar Sandhai )": {
+    "lat": 9.369,
+    "lng": 78.83,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ramanathapuram|Ramanathapuram(Uzhavar Sandhai )": {
+    "lat": 9.369,
+    "lng": 78.83,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ranipet|Arcot(Uzhavar Sandhai )": {
+    "lat": 12.924,
+    "lng": 79.334,
+    "tier": "district"
+  },
+  "Tamil Nadu|Ranipet|Ranipettai(Uzhavar Sandhai )": {
+    "lat": 12.924,
+    "lng": 79.334,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Ammapet(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Athur(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Attayampatti(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Edapadi (Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Elampillai(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Hasthampatti(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Jalagandapuram(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Mecheri(Uzhavar Sandhai)": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Mettur(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Sooramangalam(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Thammampatti (Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Salem|Thathakapatti(Uzhavar Sandhai )": {
+    "lat": 11.664,
+    "lng": 78.146,
+    "tier": "district"
+  },
+  "Tamil Nadu|Sivaganga|Devakottai (Uzhavar Sandhai )": {
+    "lat": 9.847,
+    "lng": 78.484,
+    "tier": "district"
+  },
+  "Tamil Nadu|Sivaganga|Karaikudi(Uzhavar Sandhai )": {
+    "lat": 9.847,
+    "lng": 78.484,
+    "tier": "district"
+  },
+  "Tamil Nadu|Sivaganga|Singampunari(Uzhavar Sandhai )": {
+    "lat": 9.847,
+    "lng": 78.484,
+    "tier": "district"
+  },
+  "Tamil Nadu|Sivaganga|Sivagangai (Uzhavar Sandhai )": {
+    "lat": 9.847,
+    "lng": 78.484,
+    "tier": "district"
+  },
+  "Tamil Nadu|Sivaganga|Tirupatthur(Uzhavar Sandhai )": {
+    "lat": 9.847,
+    "lng": 78.484,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thanjavur|Kumbakonam (Uzhavar Sandhai )": {
+    "lat": 10.787,
+    "lng": 79.138,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thanjavur|Pattukottai(Uzhavar Sandhai )": {
+    "lat": 10.787,
+    "lng": 79.138,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thanjavur|Peravurani(Uzhavar Sandhai)": {
+    "lat": 10.787,
+    "lng": 79.138,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thanjavur|Tirukattupalli(Uzhavar Sandhai )": {
+    "lat": 10.787,
+    "lng": 79.138,
+    "tier": "district"
+  },
+  "Tamil Nadu|The Nilgiris|Gudalur(Uzhavar Sandhai )": {
+    "lat": 11.41,
+    "lng": 76.695,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Andipatti(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Bodinayakanur(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Chinnamanur(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Kambam(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Periyakulam(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Theni|Theni(Uzhavar Sandhai )": {
+    "lat": 10.009,
+    "lng": 77.48,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Lalgudi(Uzhavar Sandhai )": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Manachanallur(Uzhavar Sandhai )": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Manapparai(Uzhavar Sandhai )": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Musiri(Uzhavar Sandhai )": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Thiruverumbur(Uzhavar Sandhai )": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruchirappalli|Thuraiyur APMC": {
+    "lat": 10.79,
+    "lng": 78.705,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirunelveli|Kandiyaperi(Uzhavar Sandhai )": {
+    "lat": 8.712,
+    "lng": 77.757,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirunelveli|NGO Colony(Uzhavar Sandhai )": {
+    "lat": 8.712,
+    "lng": 77.757,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirunelveli|Palayamkottai(Uzhavar Sandhai )": {
+    "lat": 8.712,
+    "lng": 77.757,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirupur|Dharapuram(Uzhavar Sandhai )": {
+    "lat": 11.108,
+    "lng": 77.341,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirupur|Kangayam(Uzhavar Sandhai )": {
+    "lat": 11.108,
+    "lng": 77.341,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirupur|Palladam(Uzhavar Sandhai )": {
+    "lat": 11.108,
+    "lng": 77.341,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirupur|Tiruppur (North) (Uzhavar Sandhai )": {
+    "lat": 11.108,
+    "lng": 77.341,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thirupur|Tiruppur (South) (Uzhavar Sandhai )": {
+    "lat": 11.108,
+    "lng": 77.341,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Arani(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Chengam(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Cheyyar(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Polur(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Tamarainagar(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Tiruvannamalai(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvannamalai|Vandavasi(Uzhavar Sandhai )": {
+    "lat": 12.226,
+    "lng": 79.074,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvarur|Tiruvarur(Uzhavar Sandhai )": {
+    "lat": 10.773,
+    "lng": 79.637,
+    "tier": "district"
+  },
+  "Tamil Nadu|Thiruvarur|Valangaiman APMC": {
+    "lat": 10.773,
+    "lng": 79.637,
+    "tier": "district"
+  },
+  "Tamil Nadu|Tuticorin|Kovilpatti(Uzhavar Sandhai )": {
+    "lat": 8.764,
+    "lng": 78.134,
+    "tier": "district"
+  },
+  "Tamil Nadu|Tuticorin|Tuticorin(Uzhavar Sandhai )": {
+    "lat": 8.764,
+    "lng": 78.134,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Gudiyatham(Uzhavar Sandhai )": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Kahithapattarai(Uzhavar Sandhai )": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Katpadi (Uzhavar Sandhai )": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Pallikonda(Uzhavar Sandhai)": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Perampet(Uzhavar Sandhai)": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Thirupathur APMC": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Vellore|Vellore APMC": {
+    "lat": 12.916,
+    "lng": 79.132,
+    "tier": "district"
+  },
+  "Tamil Nadu|Villupuram|Gingee(Uzhavar Sandhai )": {
+    "lat": 11.94,
+    "lng": 79.493,
+    "tier": "district"
+  },
+  "Tamil Nadu|Villupuram|Ulundurpettai APMC": {
+    "lat": 11.94,
+    "lng": 79.493,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Kariyapatti(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Rajapalayam(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Sathur(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Sivakasi(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Srivilliputhur(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Thalavaipuram(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tamil Nadu|Virudhunagar|Virudhunagar(Uzhavar Sandhai )": {
+    "lat": 9.587,
+    "lng": 77.958,
+    "tier": "district"
+  },
+  "Tripura|North Tripura|Dasda APMC": {
+    "lat": 24.374,
+    "lng": 92.16,
+    "tier": "district"
+  },
+  "Tripura|South Tripura|Biokhora": {
+    "lat": 23.42,
+    "lng": 91.47,
+    "tier": "district"
+  },
+  "Tripura|South Tripura|Kalsi APMC": {
+    "lat": 23.42,
+    "lng": 91.47,
+    "tier": "district"
+  },
+  "Uttarakhand|Dehradoon|Vikasnagar APMC": {
+    "lat": 30.325,
+    "lng": 78.044,
+    "tier": "district"
+  },
+  "Uttarakhand|Haridwar|Roorkee APMC": {
+    "lat": 29.946,
+    "lng": 78.164,
+    "tier": "district"
+  }
+}

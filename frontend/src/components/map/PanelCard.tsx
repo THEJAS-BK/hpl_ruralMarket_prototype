@@ -4,9 +4,9 @@ import Row from './Row';
 import type { PanelCardProps } from './types';
 
 export default function PanelCard({ entry, better, language, t }: PanelCardProps) {
-  const name = language === 'hi' ? entry.mandi.nameHi : entry.mandi.name;
-  const district =
-    language === 'hi' ? entry.mandi.districtHi : entry.mandi.district;
+  const name = entry.market.name;
+  const district = entry.market.district;
+  const state = entry.market.state;
   return (
     <div
       className={`p-4 flex flex-col gap-2 ${better ? 'bg-emerald-50/60' : 'bg-white'}`}
@@ -23,7 +23,9 @@ export default function PanelCard({ entry, better, language, t }: PanelCardProps
         />
         <div className="min-w-0">
           <p className="text-sm font-bold text-slate-900 truncate">{name}</p>
-          <p className="text-[11px] text-slate-500 truncate">{district}</p>
+          <p className="text-[11px] text-slate-500 truncate">
+            {district} · {state}
+          </p>
         </div>
       </div>
       <div className="flex flex-col gap-1 text-xs mt-1">
@@ -43,7 +45,7 @@ export default function PanelCard({ entry, better, language, t }: PanelCardProps
         />
         <Row
           label={t.transport}
-          value={`-₹${entry.transportCostPerQtl.toLocaleString('en-IN')}`}
+          value={`-₹${entry.transportCost.toLocaleString('en-IN')}`}
           negative
         />
       </div>
@@ -51,7 +53,7 @@ export default function PanelCard({ entry, better, language, t }: PanelCardProps
         className={`mt-2 pt-2 border-t ${better ? 'border-emerald-100' : 'border-slate-100'}`}
       >
         <span className="text-[10px] text-slate-400 uppercase font-semibold block">
-          {t.netRevenue} ({t.perQtl})
+          {t.netRevenue} ({t.perKg})
         </span>
         <span
           className={`text-lg font-bold ${better ? 'text-emerald-700' : 'text-slate-700'}`}
